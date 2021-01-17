@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>BTGP</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+
+    <!-- Panel -->
+
+    <section class="sidebar">
+        <div class="sidebar__wrapper">
+            <a id="sidebarOne" href="../panel/news.html" class="sidebar__link sidebar__link-bg"
+                onclick="sidebarBgOne()">Новости</a>
+            <a id="sidebarTwo" href="#" class="sidebar__link" onclick="sidebarBgTwo()">Пользователи</a>
+            <a id="sidebarThree" href="#" class="sidebar__link" onclick="sidebarBgThree()">Комментарии</a>
+            <a id="sidebarFour" href="#" class="sidebar__link" onclick="sidebarBgFour()">Изображения</a>
+            <a id="sidebarFive" href="#" class="sidebar__link" onclick="sidebarBgFive()">Файлы</a>
+            <a id="sidebarSix" href="../index.html" class="sidebar__link" onclick="sidebarBgSix()">Выйти</a>
+        </div>
+    </section>
+
+    <!-- Panel -->
+
+    <!-- News -->
+
+    <section class="news">
+        <div class="news__wrapper">
+            <div class="news__block">
+                <h1 class="news__title">Добавить новость</h1>
+                <form class="news__registration-block" method="POST" action="">
+                    <input type="text" required name="title" placeholder="Введите заголовок">
+                    <input type="date" required name="date">
+                    <textarea type="text" class="news__registration-text" required name="text"
+                        placeholder="Введите текст"></textarea>
+                    <div class="news__file">
+                        <input type="file" class="registration__file" name="file" multiple />
+                        <button type="button" class="registration__btn registration__remove">Удалить файлы</button>
+                    </div>
+                    <button type="submit" class="registration__btn" name="button">Опубликовать</button>
+                </form>
+            </div>
+            <div class="news__block news__wight">
+                <h1 class="news__title">Опубликованные новости</h1>
+            </div>
+        </div>
+    </section>
+
+    <!-- News -->
+
+    <script src="/js/main.js"></script>
+</body>

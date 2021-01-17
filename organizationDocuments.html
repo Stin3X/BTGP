@@ -1,0 +1,864 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>BTGP</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://kit.fontawesome.com/c8a8e1c510.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="swiper/css/swiper.css" />
+</head>
+
+<body>
+
+    <!-- Header -->
+
+    <header class="header center">
+        <div class="header__wrapper container__general">
+            <div class="header__general">
+                <div class="header__logo"></div>
+            </div>
+            <nav class="header__nav">
+                <a id="linkOne" href="/index.html" class="nav__link" onclick="linkTransitionOne()">Новости</a>
+                <a id="linkTwo" href="#" class="nav__link nav__link-bg" onclick="linkTransitionTwo()">Сведения об
+                    образовательной
+                    организации</a>
+                <a id="linkThree" href="#" class="nav__link" onclick="linkTransitionThree()">Абитуриенту</a>
+                <a id="linkFour" href="#" class="nav__link" onclick="linkTransitionFour()">Дистанционное обучение</a>
+                <a id="linkFive" href="#" class="nav__link" onclick="linkTransitionFive()">Расписание</a>
+                <a id="linkSix" href="#" class="nav__link" onclick="linkTransitionSix()">Автошкола</a>
+                <a id="linkSeven" href="/contact.html" class="nav__link" onclick="linkTransitionSeven()">Контакты</a>
+                <a id="linkEight" href="#" class="nav__link" onclick="linkTransitionEight()">Войти</a>
+            </nav>
+            <div id="dropdownOne" class="header__dropdown header__dropdown-one">
+                <a href="/BasicInformation.html" class="header__dropdown-link">Основные сведения</a>
+                <a href="/structure.html" class="header__dropdown-link">Структура и органы управления образовательной
+                    организацией</a>
+                <a href="/organizationDocuments.html" class="header__dropdown-link">Документы</a>
+                <a href="/education.html" class="header__dropdown-link">Образование</a>
+                <a href="#" class="header__dropdown-link">Образовательные стандарты</a>
+                <a href="#" class="header__dropdown-link">Руководство. Педагогический состав</a>
+                <a href="#" class="header__dropdown-link">Материально-техническое обеспечение и оснащённость
+                    образовательного процесса</a>
+                <a href="#" class="header__dropdown-link">Стипендии и иные виды материальной поддержки</a>
+                <a href="#" class="header__dropdown-link">Платные образовательные услуги</a>
+                <a href="#" class="header__dropdown-link">Вакантные места для приёма (перевода)</a>
+                <a href="#" class="header__dropdown-link">Рабочие программы</a>
+                <a href="#" class="header__dropdown-link">Коррупции - нет</a>
+                <a href="#" class="header__dropdown-link">Закупки</a>
+            </div>
+            <div id="dropdownTwo" class="header__dropdown header__dropdown-two">
+                <a href="#" class="header__dropdown-link">Приемная комиссия</a>
+                <a href="#" class="header__dropdown-link">Документы для поступления</a>
+                <a href="#" class="header__dropdown-link">День открытых дверей</a>
+                <a href="#" class="header__dropdown-link">Общежитие</a>
+                <a href="#" class="header__dropdown-link">Стипендия</a>
+                <a href="#" class="header__dropdown-link">Контрольные цифры приема 2020-2021</a>
+                <a href="#" class="header__dropdown-link">Профессиональные пробы</a>
+                <a href="#" class="header__dropdown-link">Условия обучения лиц с ОВЗ и инвалидностью</a>
+                <a href="#" class="header__dropdown-link">Порядок приема лиц с ОВЗ и инвалидностью</a>
+                <a href="#" class="header__dropdown-link">Сведения о поданных заявлениях и зачисленных абитуриентах </a>
+                <a href="#" class="header__dropdown-link">Правила приема</a>
+                <a href="#" class="header__dropdown-link">Библиотека</a>
+                <a href="#" class="header__dropdown-link">Перечень специальностей, требования к уровню образования</a>
+                <a href="#" class="header__dropdown-link">Условия приема на обучение по договорам об оказании платных
+                    услуг</a>
+                <a href="#" class="header__dropdown-link">Количество мест по договорам об оказании платных
+                    образовательных услуг</a>
+                <a href="#" class="header__dropdown-link">Договор об оказании платных услуг по программам СПО</a>
+            </div>
+            <div id="dropdownThree" class="header__dropdown header__dropdown-three">
+                <a href="#" class="header__dropdown-link">Перейти на сайт moodle.btgp.ru</a>
+            </div>
+            <div id="dropdownFour" class="header__dropdown header__dropdown-four">
+                <a href="#" class="header__dropdown-link">Замены в расписании (дневное отделение)</a>
+            </div>
+            <div id="dropdownFive" class="header__dropdown header__dropdown-five">
+                <a href="/carpark.html" class="header__dropdown-link">Автопарк</a>
+                <a href="/documents.html" class="header__dropdown-link">Документы</a>
+                <a href="/masters.html" class="header__dropdown-link">Мастера производственного обучения</a>
+                <a href="/closedArea.html" class="header__dropdown-link">Закрытая площадка</a>
+                <a href="/payment.html" class="header__dropdown-link">Оплата</a>
+                <a href="/usefulLinks.html" class="header__dropdown-link">Полезные ссылки</a>
+                <a href="/contactsDriving.html" class="header__dropdown-link">Контакты</a>
+                <a href="https://docs.google.com/forms/d/e/1FAIpQLSeCgdvO_PecQL3J3yieer_DCHZ9UsG6QxflBaeigciAwMsqfg/viewform"
+                    class="header__dropdown-link" rel="external">Опрос по качеству</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Header -->
+
+    <!-- Intro -->
+
+    <section class="intro">
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="intro__inner">
+                        <div class="intro__block">
+                            <h1 class="intro__title">Приглашаем на обучение</h1>
+                            <p class="intro__date">2 года 10 месяцев</p>
+                            <p class="intro__text">Гостиничный сервис</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="intro__inner">
+                        <div class="intro__block">
+                            <h1 class="intro__title">Приглашаем на обучение</h1>
+                            <p class="intro__date">2 года 10 месяцев</p>
+                            <p class="intro__text">Коммерция (по отраслям)</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="intro__inner">
+                        <div class="intro__block">
+                            <h1 class="intro__title">Приглашаем на обучение</h1>
+                            <p class="intro__date">3 года 10 месяцев</p>
+                            <p class="intro__text intro__width-one">Строительство и эксплуатация зданий и сооружений</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="intro__inner">
+                        <div class="intro__block">
+                            <h1 class="intro__title">Приглашаем на обучение</h1>
+                            <p class="intro__date">2 года 10 месяцев</p>
+                            <p class="intro__text intro__width-two">Земельно-имущественные отношения</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="intro__inner">
+                        <div class="intro__block">
+                            <h1 class="intro__title">Приглашаем на обучение</h1>
+                            <p class="intro__date">3 года 10 месяцев</p>
+                            <p class="intro__text intro__width-three">Информационные системы и программирование</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="intro__inner">
+                        <div class="intro__block">
+                            <h1 class="intro__title">Приглашаем на обучение</h1>
+                            <p class="intro__date">3 года 10 месяцев</p>
+                            <p class="intro__text intro__width-four">Управление, эксплуатация и обслуживание
+                                многоквартирного дома</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div>
+        </div>
+    </section>
+
+    <!-- Intro -->
+
+    <!-- organizationDocuments -->
+
+    <section class="organization center">
+        <div class="organization__general container__general">
+            <h1>Документы</h1>
+            <div class="organization__inner">
+                <h4>Устав образовательной организации:</h4>
+                <a href="https://btgp.ru/images/documents/Ustav_26.12.2013.pdf" class="general__text general__link"
+                    rel="external">Ustav_26.12.2013.pdf</a>
+                <h4>Изменения в Устав:</h4>
+                <a href="https://btgp.ru/images/documents/btgp_izmenenija_k_ustavu_28.01.2016.pdf"
+                    class="general__text general__link" rel="external">btgp_izmenenija_k_ustavu_28.01.2016.pdf</a>
+                <h4>
+                    Лицензия на осуществление образовательной деятельности (с приложениями):
+                </h4>
+                <a href="https://btgp.ru/images/documents/2020/__28122017.pdf" class="general__text general__link"
+                    rel="external">Лицензия БТГП от 06.11.2020</a>
+                <h4>Свидетельство о государственной аккредитации (с приложениями):</h4>
+                <a href="https://btgp.ru/images/documents/Akkr_14062019.pdf" class="general__text general__link"
+                    rel="external">Akkr_BTGP_14.06.19.pdf</a>
+                <h4>Государственное задание на 2017 год:</h4>
+                <a href="https://btgp.ru/images/documents/goszadanie_2017-_30.12.2016.pdf"
+                    class="general__text general__link" rel="external">goszadanie_2017-_30.12.2016.pdf</a>
+                <h4>Отчет о результатах самообследования:</h4>
+                <a href="https://btgp.ru/images/documents/Othet_o_samoobsledovanii_16.04.2015.pdf"
+                    class="general__text general__link" rel="external">Othet_o_samoobsledovanii_16.04.2015.pdf</a>
+                <a href="https://btgp.ru/images/documents/Othet_o_samoobsledovanii_31.03.2016.pdf"
+                    class="general__text general__link" rel="external">Othet_o_samoobsledovanii_31.03.2016.pdf</a>
+                <a href="https://btgp.ru/images/documents/Othet_o_samoobsledovanii_30.03.2017.pdf"
+                    class="general__text general__link" rel="external">Othet_o_samoobsledovanii_30.03.2017.pdf</a>
+                <a href="https://btgp.ru/images/documents/%D0%9E%D0%A2%D0%A7%D0%95%D0%A2_%D0%9F%D0%9E_%D0%A1%D0%90%D0%9C%D0%9E%D0%9E%D0%91%D0%A1_%D0%97%D0%90_2019%D0%B3_compressed_1.pdf"
+                    class="general__text general__link" rel="external">Othet_o_samoobsledovanii_09.04.2020.pdf</a>
+                <h4>Показатели деятельности ПОО:</h4>
+                <a href="https://btgp.ru/images/documents/Pokazateli-dejatelnosti-POO-za-2016-god-.pdf"
+                    class="general__text general__link" rel="external">Показатели деятельности ПОО за 2016 год</a>
+                <h4>
+                    Требования к рабочему месту пед.работника, обеспечивающего реализацию дистанционного обучения:
+                </h4>
+                <a href="https://btgp.ru/images/documents/trebovanija_k_rabmestu_distancionka_05.02.2015.pdf"
+                    class="general__text general__link"
+                    rel="external">trebovanija_k_rabmestu_distancionka_05.02.2015.pdf</a>
+                <h4>Положения:</h4>
+                <p class="general__text">Положение о пропускном режиме:</p>
+                <a href="https://btgp.ru/images/documents/polozhenie_o_propuskom_rezhime.pdf"
+                    class="general__text general__link" rel="external">polozhenie_o_propuskom_rezhime.pdf</a>
+                <p class="general__text">Положение об общежитии:</p>
+                <a href="https://btgp.ru/images/documents/Polozhenie_o-_obshhezhitii_22.04.2016.pdf"
+                    class="general__text general__link" rel="external">polozhenie_o-_obshhezhitii_22.04.2016.pdf</a>
+                <p class="general__text">Положение о структурном подразделении "Учебная работа":</p>
+                <a href="https://btgp.ru/images/documents/polozhenie_o_strukturnom_podrazdelenii_uchebnaja_rabota_22.04.2016.pdf"
+                    class="general__text general__link" rel="external">
+                    polozhenie_o_strukturnom_podrazdelenii_uchebnaja_rabota_22.04.2016.pdf
+                </a>
+                <p class="general__text">Положение о защите персональных данных обучающихся и работников:</p>
+                <a href="https://btgp.ru/images/documents/Polozhenie_o_zashhite_personalnyh_dannyh_22.04.2016.pdf"
+                    class="general__text general__link" rel="external">
+                    Polozhenie_o_zashhite_personalnyh_dannyh_22.04.2016.pdf
+                </a>
+                <a href="https://btgp.ru/images/documents/Polozhenie-o-zashhite-personalnyh-dannyh_25.01.2017.pdf"
+                    class="general__text general__link" rel="external">
+                    Polozhenie-o-zashhite-personalnyh-dannyh_25.01.2017.pdf
+                </a>
+                <p class="general__text">
+                    Положение об организации и порядке ведения внутреннего учета обучающихся и семей, находящихся в
+                    социально опасном положении:
+                </p>
+                <a href="https://btgp.ru/images/documents/Pologenir_ob_organizacii_i_porjadke_vedenija_vnutrennego_uchjota_obuchajushhihsja_i_semej_nahodjashhihsja_v_socialno_opasnom_polozhenii_21.09.2016.pdf"
+                    class="general__text general__link"
+                    rel="external">pologenir_ob_organizacii_i_porjadke_vedenija_vnutrennego_uchjota_..._21.09.2016.pdf</a>
+                <p class="general__text">Положение о запрете курения:</p>
+                <a href="https://btgp.ru/images/documents/pologenie_o_zaprete_kurenija_14.11.2016.pdf"
+                    class="general__text general__link" rel="external">pologenie_o_zaprete_kurenija_14.11.2016.pdf</a>
+                <p class="general__text">Положение о КТП:</p>
+                <a href="https://btgp.ru/images/documents/polozhenie_o_KTP_22.04.2016.pdf"
+                    class="general__text general__link" rel="external">polozhenie_o_KTP_22.04.2016.pdf</a>
+                <p class="general__text">Положение о портфолио обучающегося:</p>
+                <a href="https://btgp.ru/images/documents/Polozhenie-o-portfolio-obuchajushhegosja_22.09.2016.pdf"
+                    class="general__text general__link"
+                    rel="external">polozhenie-o-portfolio-obuchajushhegosja_22.09.2016.pdf</a>
+                <p class="general__text">Положение о постановке на внутренний профилактический учет:</p>
+                <a href="https://btgp.ru/images/documents/Polozhenie_o_postanovke_na_vnutrennij_profilakticheskij_uchet_21.09.2016.pdf"
+                    class="general__text general__link"
+                    rel="external">polozhenie_o_postanovke_na_vnutrennij_profilakticheskij_uchet_21.09.2016.pdf</a>
+                <p class="general__text">Положение о Совете общежития:</p>
+                <a href="https://btgp.ru/images/documents/Polozhenie_o_Sovete_obshhezhitija_25.11.2016.pdf"
+                    class="general__text general__link"
+                    rel="external">polozhenie_o_Sovete_obshhezhitija_25.11.2016.pdf</a>
+                <p class="general__text">Положение о текущем контроле успеваемости и промеж.аттестации студентов:</p>
+                <a href="https://btgp.ru/images/documents/Polozhenie-o-tekushhem-kontrole-uspevaemosti-i-promezh.attestacii-studentov_22.04.2016.pdf"
+                    class="general__text general__link"
+                    rel="external">polozhenie-o-tekushhem-kontrole-uspevaemosti-i-promezh.attestacii-studentov_22.04.2016.pdf</a>
+                <p class="general__text">Положение об Информационном центре БТГП:</p>
+                <a href="https://btgp.ru/images/documents/Polozhenie-ob-Informacionnom-centre-BTGP_21.09.2016.pdf"
+                    class="general__text general__link"
+                    rel="external">polozhenie-ob-Informacionnom-centre-BTGP_21.09.2016.pdf</a>
+                <p class="general__text">Положение по профилактике правонарушений:</p>
+                <a href="https://btgp.ru/images/documents/Polozhenie-po-profilaktike-pravonarushenij_22.04.2016.pdf"
+                    class="general__text general__link"
+                    rel="external">polozhenie-po-profilaktike-pravonarushenij_22.04.2016.pdf</a>
+                <p class="general__text">Положение о журнале самостоятельной внеаудиторной работы:</p>
+                <a href="https://btgp.ru/images/documents/Polozhenie-o-zhurnale-samostojatelnoj-vneauditornoj-raboty_25.01.2017.pdf"
+                    class="general__text general__link"
+                    rel="external">polozhenie-o-zhurnale-samostojatelnoj-vneauditornoj-raboty_25.01.2017.pdf</a>
+                <p class="general__text">Положение о классных рукод и кураторах студенческих учебных групп:</p>
+                <a href="https://btgp.ru/images/documents/Polozhenie-o-klassnyh-rukod-i--kuratorah-studencheskih-uchebnyh-grupp_25.01.2017.pdf"
+                    class="general__text general__link"
+                    rel="external">polozhenie-o-klassnyh-rukod-i-kuratorah-studencheskih-uchebnyh-grupp_25.01.2017.pdf</a>
+                <p class="general__text">Положение об организации выполнени и защиты ВКР:</p>
+                <a href="https://btgp.ru/images/documents/Polozhenie-ob-organizacii-vypolneni-i-zashhity-VKR_25.01.2017.pdf"
+                    class="general__text general__link"
+                    rel="external">polozhenie-ob-organizacii-vypolneni-i-zashhity-VKR_25.01.2017.pdf</a>
+                <p class="general__text">Положение о порядке выдачи, заполнения, ведения и учёта зачётных книжек
+                    студентов:</p>
+                <a href="https://btgp.ru/images/documents/Polozhenie--o-porjadke-vydachi-zapolnenija-vedenija--i-uchjota-zachjotnyh-knizhek-studentov_17.03.2017.pdf"
+                    class="general__text general__link" rel="external">
+                    polozhenie--o-porjadke-vydachi-zapolnenija-vedenija--i-uchjota-zachjotnyh-knizhek-studentov_17.03.2017.pdf
+                </a>
+                <p class="general__text">Положение о порядке формирования, ведения и хранения личных дел студентов:</p>
+                <a href="https://btgp.ru/images/documents/Polozhenie-o-porjadke-formirovanija-vedenija-i-hranenija-lichnyh-del-studentov_17.03.2017.pdf"
+                    class="general__text general__link">polozhenie-o-porjadke-formirovanija-vedenija-i-hranenija-lichnyh-del-studentov_17.03.2017.pdf</a>
+                <p class="general__text">Порядок заполнения и выдачи дипломов о среднем профессиональном образовании и
+                    их дубликатов:</p>
+                <a href="https://btgp.ru/images/documents/Porjadok-zapolnenija-i-vydachi-diplomov-o-srednem-professionalnom-obrazovanii-i-ih-dublikatov_17.03.2017.pdf"
+                    class="general__text general__link"
+                    rel="external">porjadok-zapolnenija-i-vydachi-diplomov-o-srednem-professionalnom-obrazovanii-i-ih-dublikatov_17.03.2017.pdf</a>
+                <p class="general__text">Положение о сайте ОГБПОУ Буйский ТГП Костромской области:</p>
+                <a href="https://btgp.ru/images/documents/Polozhenie-o-sajte-OGBPOU-Bujskij-TGP-Kostromskoj-oblasti_22.04.2016.pdf"
+                    class="general__text general__link"
+                    rel="external">polozhenie-o-sajte-OGBPOU-Bujskij-TGP-Kostromskoj-oblasti_22.04.2016.pdf</a>
+                <p class="general__text" rel="external">Положение о стипендиальном обеспечении:</p>
+                <a href="https://btgp.ru/images/documents/Polozhenie-o-stipendialnom-obespechenii_22.04.2016.pdf"
+                    class="general__text general__link"
+                    rel="external">polozhenie-o-stipendialnom-obespechenii_22.04.2016.pdf</a>
+                <p class="general__text">Положение о комиссии по соблюдению требований к служебному поведению
+                    сотрудников и урегулированию конфликтов интересов:</p>
+                <a href="https://btgp.ru/images/documents/Polozhenie-o-komissii--po-sobljudeniju-trebovanij-k--sluzhebnomu--povedeniju-sotrudnikov-i-uregulirovaniju-konfliktov-interesov_12.05.2017.pdf"
+                    class="general__text general__link"
+                    rel="external">polozhenie-o-komissii--po-sobljudeniju-trebovanij_12.05.2017.pdf</a>
+                <p class="general__text">Положение о конфликте интересов работников:</p>
+                <a href="https://btgp.ru/images/documents/Polozhenie-o-konflikte-interesov-rabotnikov_12.05.2017.pdf"
+                    class="general__text general__link"
+                    rel="external">polozhenie-o-konflikte-interesov-rabotnikov_12.05.2017.pdf</a>
+                <p class="general__text">Положение о порядке рассмотрения обращений граждан:</p>
+                <a href="https://btgp.ru/images/documents/Polozhenie_o_porjadke_rassmotrenija_obrashhenij_grazhdan_26.05.2017.pdf"
+                    class="general__text general__link"
+                    rel="external">polozhenie_o_porjadke_rassmotrenija_obrashhenij_grazhdan_26.05.2017</a>
+                <p class="general__text">Положение о переводе студентов с одной образовательной программы и (или) формы
+                    обучения на другую:</p>
+                <a href="https://btgp.ru/images/documents/Polozhenie_o_perevode_studentov_s_odnoj_..._27.06.2017.pdf"
+                    class="general__text general__link"
+                    rel="external">polozhenie_o_perevode_studentov_s_odnoj_..._27.06.2017</a>
+                <p class="general__text">Положение о переводе, зачислении и отчислении студентов:</p>
+                <a href="https://btgp.ru/images/documents/Polozheni_o_perevode,_zachislenii_i_otchislenii_studentov_27.06.2017.pdf"
+                    class="general__text general__link"
+                    rel="external">polozheni_o_perevode,_zachislenii_i_otchislenii_studentov_27.06.2017.pdf</a>
+                <p class="general__text">Положение об оплате труда:</p>
+                <a href="https://btgp.ru/images/documents/Polozhenie-ob-oplate-truda-OGBPOU-BTGP_01.07.2017.pdf"
+                    class="general__text general__link"
+                    rel="external">polozhenie-ob-oplate-truda-OGBPOU-BTGP_01.07.2017.pdf</a>
+                <p class="general__text">Приложения 1,2,3 к Положению об оплате труда:</p>
+                <a href="https://btgp.ru/images/documents/Prilozhenia-123-k-Polozheniyu-ob-oplate-truda-OGBPOU-BTGP.pdf"
+                    class="general__text general__link"
+                    rel="external">prilozhenia-123-k-Polozheniyu-ob-oplate-truda-OGBPOU-BTGP_01.07.2017.pdf</a>
+                <p class="general__text">Положение о премировании работников:</p>
+                <a href="https://btgp.ru/images/documents/Polozhenie-o-premirovanii-rabotnikov_OGBPOU_BTGP_01.07.2017.pdf"
+                    class="general__text general__link"
+                    rel="external">polozhenie-o-premirovanii-rabotnikov_OGBPOU_BTGP_01.07.2017.pdf</a>
+                <p class="general__text">Положение о внебюджетной деятельности:</p>
+                <a href="https://btgp.ru/images/documents/Polozhenie-o-vnebjudzhetnoj-dejatelnosti.pdf"
+                    class="general__text general__link" rel="external">polozhenie o vnebjudzhetnoj dejatel'nosti.pdf</a>
+                <p class="general__text">Сведения о доходах руководителя за 2016 год:</p>
+                <a href="https://btgp.ru/images/documents/Svedenia_o_dokhodakh_.pdf" class="general__text general__link"
+                    rel="external">svedenia_o_dokhodakh.pdf</a>
+            </div>
+
+            <!-- Attachments -->
+
+            <div class="attachments">
+                <h4>Вложения:</h4>
+                <div class="attachments__columns">
+                    <p class="general__text attachments__indent">Файл</p>
+                    <div class="attachments__columns-inner">
+                        <p class="general__text attachments__indent attachments__line">Описание</p>
+                        <p class="general__text attachments__indent">Размер</p>
+                    </div>
+                </div>
+                <div class="attachments__inner">
+                    <i class="far fa-file-alt attachments__icon"></i>
+                    <a href="https://btgp.ru/attachments/article/39/Информация о зарплате руководства на сайт 2019.doc"
+                        class="general__text general__link" rel="external">
+                        Информация о зарплате руководства на сайт 2019.doc
+                    </a>
+                </div>
+                <div class="attachments__inner">
+                    <i class="far fa-file-alt attachments__icon"></i>
+                    <a href="https://btgp.ru/attachments/article/39/ПЛАН дейстивий оказания  адресной поддержки выпускникам.pdf"
+                        class="general__text general__link" rel="external">
+                        План дейстивий оказания адресной поддержки выпускникам.pdf
+                    </a>
+                </div>
+                <div class="attachments__inner">
+                    <i class="far fa-file-alt attachments__icon"></i>
+                    <a href="https://btgp.ru/attachments/article/39/План финансово-хозяйственной деятельности на 2019 год.pdf"
+                        class="general__text general__link" rel="external">
+                        План финансово-хозяйственной деятельности на 2019 год.pdf
+                    </a>
+                </div>
+                <div class="attachments__inner">
+                    <i class="far fa-file-alt attachments__icon"></i>
+                    <a href="https://btgp.ru/attachments/article/39/Положение о раб прог спецдисциплин и модулей 2020г..pdf"
+                        class="general__text general__link" rel="external">
+                        Положение о раб прог спецдисциплин и модулей 2020г..pdf
+                    </a>
+                </div>
+                <div class="attachments__inner">
+                    <i class="far fa-file-alt attachments__icon"></i>
+                    <a href="https://btgp.ru/attachments/article/39/Положение о рабочих программах 2020г..pdf"
+                        class="general__text general__link" rel="external">
+                        Положение о рабочих программах 2020г..pdf
+                    </a>
+                </div>
+                <div class="attachments__inner">
+                    <i class="far fa-file-alt attachments__icon"></i>
+                    <a href="https://btgp.ru/attachments/article/39/Положение о библиотеке.pdf"
+                        class="general__text general__link" rel="external">
+                        Положение о библиотеке.pdf
+                    </a>
+                </div>
+                <div class="attachments__inner">
+                    <i class="far fa-file-alt attachments__icon"></i>
+                    <a href="https://btgp.ru/attachments/article/39/Положение о бухгалтерии.pdf"
+                        class="general__text general__link" rel="external">
+                        Положение о бухгалтерии.pdf
+                    </a>
+                </div>
+                <div class="attachments__inner">
+                    <i class="far fa-file-alt attachments__icon"></i>
+                    <a href="https://btgp.ru/attachments/article/39/Положение о ведении журнала производственного обучения.pdf"
+                        class="general__text general__link" rel="external">
+                        Положение о ведении журнала производственного обучения.pdf
+                    </a>
+                </div>
+                <div class="attachments__inner">
+                    <i class="far fa-file-alt attachments__icon"></i>
+                    <a href="https://btgp.ru/attachments/article/39/Положение о ВКР 2020г.pdf"
+                        class="general__text general__link" rel="external">
+                        Положение о ВКР 2020г.pdf
+                    </a>
+                </div>
+                <div class="attachments__inner">
+                    <i class="far fa-file-alt attachments__icon"></i>
+                    <a href="https://btgp.ru/attachments/article/39/Положение о внутренней системе оценки качества образования.pdf"
+                        class="general__text general__link" rel="external">
+                        Положение о внутренней системе оценки качества образования.pdf
+                    </a>
+                </div>
+                <div class="attachments__inner">
+                    <i class="far fa-file-alt attachments__icon"></i>
+                    <a href="https://btgp.ru/attachments/article/39/Положение о дистанционном обучении.pdf"
+                        class="general__text general__link" rel="external">
+                        Положение о дистанционном обучении.pdf
+                    </a>
+                </div>
+                <div class="attachments__inner">
+                    <i class="far fa-file-alt attachments__icon"></i>
+                    <a href="https://btgp.ru/attachments/article/39/Положение о ДОТ и ЭО 2020г.pdf"
+                        class="general__text general__link" rel="external">
+                        Положение о ДОТ и ЭО 2020г.pdf
+                    </a>
+                </div>
+                <div class="attachments__inner">
+                    <i class="far fa-file-alt attachments__icon"></i>
+                    <a href="https://btgp.ru/attachments/article/39/Положение о Единой комиссии по определению поставщиков ОГБПОУ Буйский ТГП.pdf"
+                        class="general__text general__link" rel="external">
+                        Положение о Единой комиссии по определению поставщиков ОГБПОУ Буйский ТГП.pdf
+                    </a>
+                </div>
+                <div class="attachments__inner">
+                    <i class="far fa-file-alt attachments__icon"></i>
+                    <a href="https://btgp.ru/attachments/article/39/Положение о Единой комиссии по размещению заказов на поставки товаров для нужд ОГБПОУ Буйский ТГП.pdf"
+                        class="general__text general__link" rel="external">
+                        Положение о Единой комиссии по размещению заказов на поставки товаров для нужд ОГБПОУ Буйский
+                        ТГП.pdf
+                    </a>
+                </div>
+                <div class="attachments__inner">
+                    <i class="far fa-file-alt attachments__icon"></i>
+                    <a href="https://btgp.ru/attachments/article/39/Положение о закупках за счет средств от предпринемательской деятельности для нужд ОГБПОУ Буйский ТГП.pdf"
+                        class="general__text general__link" rel="external">
+                        Положение о закупках за счет средств от предпринемательской деятельности для нужд ОГБПОУ Буйский
+                        ТГП.pdf
+                    </a>
+                </div>
+                <div class="attachments__inner">
+                    <i class="far fa-file-alt attachments__icon"></i>
+                    <a href="https://btgp.ru/attachments/article/39/Положение о заочном отделении.pdf"
+                        class="general__text general__link" rel="external">
+                        Положение о заочном отделении.pdf
+                    </a>
+                </div>
+                <div class="attachments__inner">
+                    <i class="far fa-file-alt attachments__icon"></i>
+                    <a href="https://btgp.ru/attachments/article/39/Положение о курсовой работе по учебной дисциплине, ПМ.pdf"
+                        class="general__text general__link" rel="external">
+                        Положение о курсовой работе по учебной дисциплине, ПМ.pdf
+                    </a>
+                </div>
+                <div class="attachments__inner">
+                    <i class="far fa-file-alt attachments__icon"></i>
+                    <a href="https://btgp.ru/attachments/article/39/Положение о порядке оказания учебно-методич помощи обучающимся 2020г.pdf"
+                        class="general__text general__link" rel="external">
+                        Положение о порядке оказания учебно-методич помощи обучающимся 2020г.pdf
+                    </a>
+                </div>
+                <div class="attachments__inner">
+                    <i class="far fa-file-alt attachments__icon"></i>
+                    <a href="https://btgp.ru/attachments/article/39/Положение о порядке учета, хранения и списания и уничтожения экзаменационных работ, курсовых работ и ВКР.pdf"
+                        class="general__text general__link" rel="external">
+                        Положение о порядке учета, хранения и списания и уничтожения экзаменационных работ, курсовых
+                        работ и ВКР.pdf
+                    </a>
+                </div>
+                <div class="attachments__inner">
+                    <i class="far fa-file-alt attachments__icon"></i>
+                    <a href="https://btgp.ru/attachments/article/39/Положение о практике обучающихся СПО.pdf"
+                        class="general__text general__link" rel="external">
+                        Положение о практике обучающихся СПО.pdf
+                    </a>
+                </div>
+                <div class="attachments__inner">
+                    <i class="far fa-file-alt attachments__icon"></i>
+                    <a href="https://btgp.ru/attachments/article/39/Положение о проведении аттестации обучающихся СПО на присвоение рабочей профессии.pdf"
+                        class="general__text general__link" rel="external">
+                        Положение о проведении аттестации обучающихся СПО на присвоение рабочей профессии.pdf
+                    </a>
+                </div>
+                <div class="attachments__inner">
+                    <i class="far fa-file-alt attachments__icon"></i>
+                    <a href="https://btgp.ru/attachments/article/39/Положение о профориентационной работе.pdf"
+                        class="general__text general__link" rel="external">
+                        Положение о профориентационной работе.pdf
+                    </a>
+                </div>
+                <div class="attachments__inner">
+                    <i class="far fa-file-alt attachments__icon"></i>
+                    <a href="https://btgp.ru/attachments/article/39/Положение о режиме учебных занятий 2020г..pdf"
+                        class="general__text general__link" rel="external">
+                        Положение о режиме учебных занятий 2020г..pdf
+                    </a>
+                </div>
+                <div class="attachments__inner">
+                    <i class="far fa-file-alt attachments__icon"></i>
+                    <a href="https://btgp.ru/attachments/article/39/Положение о студенческой научно-практической конференции.pdf"
+                        class="general__text general__link" rel="external">
+                        Положение о студенческой научно-практической конференции.pdf
+                    </a>
+                </div>
+                <div class="attachments__inner">
+                    <i class="far fa-file-alt attachments__icon"></i>
+                    <a href="https://btgp.ru/attachments/article/39/Положение о текущем и промежуточном контроле.pdf"
+                        class="general__text general__link" rel="external">
+                        Положение о текущем и промежуточном контроле.pdf
+                    </a>
+                </div>
+                <div class="attachments__inner">
+                    <i class="far fa-file-alt attachments__icon"></i>
+                    <a href="https://btgp.ru/attachments/article/39/Положение о экспертной комиссии по приемке товаров, работ и услуг ОГБПОУ Буйский ТГП .pdf"
+                        class="general__text general__link" rel="external">
+                        Положение о экспертной комиссии по приемке товаров, работ и услуг ОГБПОУ Буйский ТГП .pdf
+                    </a>
+                </div>
+                <div class="attachments__inner">
+                    <i class="far fa-file-alt attachments__icon"></i>
+                    <a href="https://btgp.ru/attachments/article/39/Положение об обучении по индивидуальному учебному плану.pdf"
+                        class="general__text general__link" rel="external">
+                        Положение об обучении по индивидуальному учебному плану.pdf
+                    </a>
+                </div>
+                <div class="attachments__inner">
+                    <i class="far fa-file-alt attachments__icon"></i>
+                    <a href="https://btgp.ru/attachments/article/39/Положение об ОГБПОУ Буйский ТГП.pdf"
+                        class="general__text general__link" rel="external">
+                        Положение об ОГБПОУ Буйский ТГП.pdf
+                    </a>
+                </div>
+                <div class="attachments__inner">
+                    <i class="far fa-file-alt attachments__icon"></i>
+                    <a href="https://btgp.ru/attachments/article/39/Положение об электронной библиотеке.pdf"
+                        class="general__text general__link" rel="external">
+                        Положение об электронной библиотеке.pdf
+                    </a>
+                </div>
+                <div class="attachments__inner">
+                    <i class="far fa-file-alt attachments__icon"></i>
+                    <a href="https://btgp.ru/attachments/article/39/приказ 2398.pdf" class="general__text general__link"
+                        rel="external">
+                        Приказ 2398.pdf
+                    </a>
+                </div>
+                <div class="attachments__inner">
+                    <i class="far fa-file-alt attachments__icon"></i>
+                    <a href="https://btgp.ru/attachments/article/39/Приложение к Приказу ДОН КЦП на  2020.pdf"
+                        class="general__text general__link" rel="external">
+                        Приложение к Приказу ДОН КЦП на 2020.pdf
+                    </a>
+                </div>
+                <div class="attachments__inner">
+                    <i class="far fa-file-alt attachments__icon"></i>
+                    <a href="https://btgp.ru/attachments/article/39/Программа проведения вводного инструктажа по охране труда.pdf"
+                        class="general__text general__link" rel="external">
+                        Программа проведения вводного инструктажа по охране труда.pdf
+                    </a>
+                </div>
+                <div class="attachments__inner">
+                    <i class="far fa-file-alt attachments__icon"></i>
+                    <a href="https://btgp.ru/attachments/article/39/Программа развития ОГБПОУ БТГП КО 2020-2024.pdf"
+                        class="general__text general__link" rel="external">
+                        Программа развития ОГБПОУ БТГП КО 2020-2024.pdf
+                    </a>
+                </div>
+                <div class="attachments__inner">
+                    <i class="far fa-file-alt attachments__icon"></i>
+                    <a href="https://btgp.ru/attachments/article/39/ПФХД.pdf" class="general__text general__link"
+                        rel="external">
+                        ПФХД.pdf
+                    </a>
+                </div>
+                <div class="attachments__inner">
+                    <i class="far fa-file-alt attachments__icon"></i>
+                    <a href="https://btgp.ru/attachments/article/39/Сведения ИЦ.pdf" class="general__text general__link"
+                        rel="external">
+                        Сведения ИЦ.pdf
+                    </a>
+                </div>
+                <div class="attachments__inner">
+                    <i class="far fa-file-alt attachments__icon"></i>
+                    <a href="https://btgp.ru/attachments/article/39/Сведения о операциях с целевыми субсидиями 2018.pdf"
+                        class="general__text general__link" rel="external">
+                        Сведения о операциях с целевыми субсидиями 2018.pdf
+                    </a>
+                </div>
+                <div class="attachments__inner">
+                    <i class="far fa-file-alt attachments__icon"></i>
+                    <a href="https://btgp.ru/attachments/article/39/Сведения об операциях с целевыми субсидиями на 2019 год.pdf"
+                        class="general__text general__link" rel="external">
+                        Сведения об операциях с целевыми субсидиями на 2019 год.pdf
+                    </a>
+                </div>
+                <div class="attachments__inner">
+                    <i class="far fa-file-alt attachments__icon"></i>
+                    <a href="https://btgp.ru/attachments/article/39/dogovor-platnyh-uslug.pdf"
+                        class="general__text general__link" rel="external">
+                        Договор на оказание платных образовательных услуг
+                    </a>
+                </div>
+                <div class="attachments__inner">
+                    <i class="far fa-file-alt attachments__icon"></i>
+                    <a href="https://btgp.ru/attachments/article/39/Изменения в устав 05.02.2018.pdf"
+                        class="general__text general__link" rel="external">
+                        Изменения в Устав ОГБ ПОУ "Буйский ТГП Костромской области"
+                    </a>
+                </div>
+                <div class="attachments__inner">
+                    <i class="far fa-file-alt attachments__icon"></i>
+                    <a href="https://btgp.ru/attachments/article/39/Кол-во мест платники.pdf"
+                        class="general__text general__link" rel="external">
+                        Количество мест по договорам об оказании платных образовательных услуг
+                    </a>
+                </div>
+                <div class="attachments__inner">
+                    <i class="far fa-file-alt attachments__icon"></i>
+                    <a href="https://btgp.ru/attachments/article/39/KCP-2018.pdf" class="general__text general__link"
+                        rel="external">
+                        Контрольные цифры приема
+                    </a>
+                </div>
+                <div class="attachments__inner">
+                    <i class="far fa-file-alt attachments__icon"></i>
+                    <a href="https://btgp.ru/attachments/article/39/КЦП_2020-2021.pdf"
+                        class="general__text general__link" rel="external">
+                        Контрольные цифры приема
+                    </a>
+                </div>
+                <div class="attachments__inner">
+                    <i class="far fa-file-alt attachments__icon"></i>
+                    <a href="https://btgp.ru/attachments/article/39/АПРЕЛЬ  ОТЧЕТ ПО САМООБС ЗА 2017г БТГП.pdf"
+                        class="general__text general__link" rel="external">
+                        Отчет о результатах самообследования ОГБПОУ "Буйский ТГП КО"
+                    </a>
+                </div>
+                <div class="attachments__inner">
+                    <i class="far fa-file-alt attachments__icon"></i>
+                    <a href="https://btgp.ru/attachments/article/39/ПАСПОРТ ДОСТУП ОБЩЕЖИТИЕ .pdf"
+                        class="general__text general__link" rel="external">
+                        Паспорт доступности (общежитие)
+                    </a>
+                </div>
+                <div class="attachments__inner">
+                    <i class="far fa-file-alt attachments__icon"></i>
+                    <a href="https://btgp.ru/attachments/article/39/ПАСПОРТ доступ УЧЕБ КОРПУС  БТГП.pdf"
+                        class="general__text general__link" rel="external">
+                        Паспорт доступности (учебный корпус)
+                    </a>
+                </div>
+                <div class="attachments__inner">
+                    <i class="far fa-file-alt attachments__icon"></i>
+                    <a href="https://btgp.ru/attachments/article/39/План Финансово-хозяйственной деятельности 2018 год.pdf"
+                        class="general__text general__link" rel="external">
+                        План Финансово-хозяйственной деятельности на 2018 год
+                    </a>
+                </div>
+                <div class="attachments__inner">
+                    <i class="far fa-file-alt attachments__icon"></i>
+                    <a href="https://btgp.ru/attachments/article/39/Показатели деятельности  ОГБПОУ БТГП КОза 2017  год.pdf"
+                        class="general__text general__link" rel="external">
+                        Показатели деятельности подлежащей самообследованию ОГБПОУ "Буйский ТГП КО"
+                    </a>
+                </div>
+                <div class="attachments__inner">
+                    <i class="far fa-file-alt attachments__icon"></i>
+                    <a href="https://btgp.ru/attachments/article/39/Polozhenie_o_zakupkakh_utverzhdennoe_BTGP_2019.pdf"
+                        class="general__text general__link" rel="external">
+                        Положение о закупках товаров, работ, услуг...
+                    </a>
+                </div>
+                <div class="attachments__inner">
+                    <i class="far fa-file-alt attachments__icon"></i>
+                    <a href="https://btgp.ru/attachments/article/39/Polozhenie-o-platnyh-obrazovatelnyh-uslugah-2017.pdf"
+                        class="general__text general__link" rel="external">
+                        Положение о платных образовательных услугах и дополнительных платных образоват..
+                    </a>
+                </div>
+                <div class="attachments__inner">
+                    <i class="far fa-file-alt attachments__icon"></i>
+                    <a href="https://btgp.ru/attachments/article/39/Положение о производственном обучении.pdf"
+                        class="general__text general__link" rel="external">
+                        Положение о производственном обучении и практике обучающихся в техникуме
+                    </a>
+                </div>
+                <div class="attachments__inner">
+                    <i class="far fa-file-alt attachments__icon"></i>
+                    <a href="https://btgp.ru/attachments/article/39/Порядок зачета результатов освоения дисциплин_11.01.2018.pdf"
+                        class="general__text general__link" rel="external">
+                        Порядок зачета результатов освоения дисциплин, практики, дополнительных образ...
+                    </a>
+                </div>
+                <div class="attachments__inner">
+                    <i class="far fa-file-alt attachments__icon"></i>
+                    <a href="https://btgp.ru/attachments/article/39/Правила внутреннего распорядка 22.04.2016 .pdf"
+                        class="general__text general__link" rel="external">
+                        Правила внутреннего распорядка
+                    </a>
+                </div>
+                <div class="attachments__inner">
+                    <i class="far fa-file-alt attachments__icon"></i>
+                    <a href="https://btgp.ru/attachments/article/39/Правила приема с изменениями.pdf"
+                        class="general__text general__link" rel="external">
+                        Правила приема граждан на обучение в ОГБПОУ
+                    </a>
+                </div>
+                <div class="attachments__inner">
+                    <i class="far fa-file-alt attachments__icon"></i>
+                    <a href="https://btgp.ru/attachments/article/39/Правила приема граждан на обучение_28.02.2018.pdf"
+                        class="general__text general__link" rel="external">
+                        Правила прима граждан на обучение
+                    </a>
+                </div>
+                <div class="attachments__inner">
+                    <i class="far fa-file-alt attachments__icon"></i>
+                    <a href="https://btgp.ru/attachments/article/39/svedenija-o-dohodah,-rashodah-ob-imuschestve.jpg"
+                        class="general__text general__link" rel="external">
+                        Сведения о доходах, расходах об имуществе и обязательствах имущественного хара..
+                    </a>
+                </div>
+                <div class="attachments__inner">
+                    <i class="far fa-file-alt attachments__icon"></i>
+                    <a href="https://btgp.ru/attachments/article/39/обучение по договорам2020.pdf"
+                        class="general__text general__link" rel="external">
+                        Условия приема в техникум на обучение по договорам об оказании платных услуг
+                    </a>
+                </div>
+            </div>
+
+            <!-- Attachments -->
+
+        </div>
+    </section>
+
+    <!-- organizationDocuments -->
+
+    <!-- Modal Log in -->
+
+    <section id="myModal" class="modal">
+        <div class="modal__wrapper">
+
+            <!-- Authorization -->
+
+            <form class="modal__registration-block" method="POST" action="">
+                <span class="modal__close" onclick="closeModal()">&times;</span>
+                <input type="text" required name="login" placeholder="Введите логин">
+                <input type="password" required name="password" placeholder="Введите пароль">
+                <button type="submit" class="registration__btn" name="button">Войти</button>
+            </form>
+
+            <!-- Authorization -->
+
+        </div>
+    </section>
+
+    <!-- Modal Log in -->
+
+    <!-- Footer -->
+
+    <footer class="footer center">
+        <div class="footer__wrapper container__general">
+            <div class="footer__block">
+                <h2 class="footer__title">Навигация</h2>
+                <a href="#" class="footer__link">SiteMap</a>
+                <a href="#" class="footer__link">Главная</a>
+                <a href="#" class="footer__link">Центр развития карьеры</a>
+                <a href="#" class="footer__link">Профессиональные пробы</a>
+                <a href="#" class="footer__link">Форма "коррупции - нет"</a>
+                <a href="#" class="footer__link">Обращения граждан</a>
+            </div>
+            <div class="footer__block">
+                <h2 class="footer__title">О нас</h2>
+                <a href="#" class="footer__link">СМИ о нас</a>
+                <a href="#" class="footer__link">Опросы и анкеты</a>
+                <a href="#" class="footer__link">Задать вопрос</a>
+                <a href="#" class="footer__link">Оставить отзыв о работе</a>
+                <a href="#" class="footer__link">Демонстрационный экзамен</a>
+                <a href="#" class="footer__link">Образование (старое)</a>
+            </div>
+            <div class="footer__block">
+                <h2 class="footer__title">Соцсети</h2>
+                <a href="#" class="footer__link">Мы в Twitter</a>
+                <a href="#" class="footer__link">Мы в Facebook</a>
+                <a href="#" class="footer__link">Мы в Google+</a>
+                <a href="#" class="footer__link">Группа Автошколы в ВК</a>
+                <a href="#" class="footer__link">Независимая система оценки качества</a>
+                <a href="#" class="footer__link">Электронная библиотека ЮРАЙТ</a>
+                <a href="#" class="footer__link">Регистрации в электронной библиотеке </a>
+            </div>
+            <div class="footer__block">
+                <button class="footer__modal-btn" data-hover="Нажми на меня!" onclick="footerModal()">
+                    <div>Задать вопрос</div>
+                </button>
+                <div class="footer__social">
+                    <a href="#" class="footer__social-icon">
+                        <i class="fab fa-vk footer__social-additionally"></i>
+                    </a>
+                    <a href="#" class="footer__social-icon">
+                        <i class="fab fa-odnoklassniki-square footer__social-additionally"></i>
+                    </a>
+                    <a href="#" class="footer__social-icon">
+                        <i class="fab fa-youtube footer__social-additionally"></i>
+                    </a>
+                </div>
+
+                <!-- Modal Questions -->
+
+                <div id="myModalFooter" class="modal">
+                    <div class="modal__wrapper">
+
+                        <!-- Form Footer -->
+
+                        <form class="modal__registration-block" method="POST" action="">
+                            <span class="modal__close" onclick="closeModalFooter()">&times;</span>
+                            <input type="text" required name="login" placeholder="Ваше имя">
+                            <input type="email" required name="password" placeholder="Ваш e-mail">
+                            <input type="number" required name="password" placeholder="Номер телефона">
+                            <textarea type="text" class="news__registration-text" required name="text"
+                                placeholder="Введите текст"></textarea>
+                            <div class="news__file">
+                                <input type="file" class="registration__file" name="file" multiple />
+                                <button type="button" class="registration__btn registration__remove">Удалить
+                                    файлы</button>
+                            </div>
+                            <button type="submit" class="registration__btn" name="button">Отправить</button>
+                        </form>
+
+                        <!-- Form Footer -->
+
+                    </div>
+                </div>
+
+                <!-- Modal Questions -->
+
+            </div>
+        </div>
+    </footer>
+
+    <!-- Footer -->
+
+    <script src="swiper/js/swiper.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>

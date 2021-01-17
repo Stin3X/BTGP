@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>BTGP</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/c8a8e1c510.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- Header -->
+
+    <header class="header center">
+        <div class="header__wrapper container__general">
+            <div class="header__general">
+                <div class="header__logo"></div>
+            </div>
+            <nav class="header__nav">
+                <a id="linkOne" href="../index.html" class="nav__link" onclick="linkTransitionOne()">Новости</a>
+                <a id="linkTwo" href="#" class="nav__link" onclick="linkTransitionTwo()">Сведения об
+                    образовательной
+                    организации</a>
+                <a id="linkThree" href="#" class="nav__link" onclick="linkTransitionThree()">Абитуриенту</a>
+                <a id="linkFour" href="#" class="nav__link" onclick="linkTransitionFour()">Дистанционное обучение</a>
+                <a id="linkFive" href="#" class="nav__link" onclick="linkTransitionFive()">Расписание</a>
+                <a id="linkSix" href="#" class="nav__link" onclick="linkTransitionSix()">Автошкола</a>
+                <a id="linkSeven" href="#" class="nav__link nav__link-bg" onclick="linkTransitionSeven()">Контакты</a>
+                <a id="linkEight" href="#" class="nav__link" onclick="linkTransitionEight()">Войти</a>
+            </nav>
+            <div id="dropdownOne" class="header__dropdown header__dropdown-one">
+                <a href="/BasicInformation.html" class="header__dropdown-link">Основные сведения</a>
+                <a href="/structure.html" class="header__dropdown-link">Структура и органы управления образовательной организацией</a>
+                <a href="/organizationDocuments.html" class="header__dropdown-link">Документы</a>
+                <a href="/education.html" class="header__dropdown-link">Образование</a>
+                <a href="#" class="header__dropdown-link">Образовательные стандарты</a>
+                <a href="#" class="header__dropdown-link">Руководство. Педагогический состав</a>
+                <a href="#" class="header__dropdown-link">Материально-техническое обеспечение и оснащённость
+                    образовательного процесса</a>
+                <a href="#" class="header__dropdown-link">Стипендии и иные виды материальной поддержки</a>
+                <a href="#" class="header__dropdown-link">Платные образовательные услуги</a>
+                <a href="#" class="header__dropdown-link">Вакантные места для приёма (перевода)</a>
+                <a href="#" class="header__dropdown-link">Рабочие программы</a>
+                <a href="#" class="header__dropdown-link">Коррупции - нет</a>
+                <a href="#" class="header__dropdown-link">Закупки</a>
+            </div>
+            <div id="dropdownTwo" class="header__dropdown header__dropdown-two">
+                <a href="#" class="header__dropdown-link">Приемная комиссия</a>
+                <a href="#" class="header__dropdown-link">Документы для поступления</a>
+                <a href="#" class="header__dropdown-link">День открытых дверей</a>
+                <a href="#" class="header__dropdown-link">Общежитие</a>
+                <a href="#" class="header__dropdown-link">Стипендия</a>
+                <a href="#" class="header__dropdown-link">Контрольные цифры приема 2020-2021</a>
+                <a href="#" class="header__dropdown-link">Профессиональные пробы</a>
+                <a href="#" class="header__dropdown-link">Условия обучения лиц с ОВЗ и инвалидностью</a>
+                <a href="#" class="header__dropdown-link">Порядок приема лиц с ОВЗ и инвалидностью</a>
+                <a href="#" class="header__dropdown-link">Сведения о поданных заявлениях и зачисленных абитуриентах </a>
+                <a href="#" class="header__dropdown-link">Правила приема</a>
+                <a href="#" class="header__dropdown-link">Библиотека</a>
+                <a href="#" class="header__dropdown-link">Перечень специальностей, требования к уровню образования</a>
+                <a href="#" class="header__dropdown-link">Условия приема на обучение по договорам об оказании платных
+                    услуг</a>
+                <a href="#" class="header__dropdown-link">Количество мест по договорам об оказании платных
+                    образовательных услуг</a>
+                <a href="#" class="header__dropdown-link">Договор об оказании платных услуг по программам СПО</a>
+            </div>
+            <div id="dropdownThree" class="header__dropdown header__dropdown-three">
+                <a href="#" class="header__dropdown-link">Перейти на сайт moodle.btgp.ru</a>
+            </div>
+            <div id="dropdownFour" class="header__dropdown header__dropdown-four">
+                <a href="#" class="header__dropdown-link">Замены в расписании (дневное отделение)</a>
+            </div>
+            <div id="dropdownFive" class="header__dropdown header__dropdown-five">
+                <a href="/carpark.html" class="header__dropdown-link">Автопарк</a>
+                <a href="/documents.html" class="header__dropdown-link">Документы</a>
+                <a href="/masters.html" class="header__dropdown-link">Мастера производственного обучения</a>
+                <a href="/closedArea.html" class="header__dropdown-link">Закрытая площадка</a>
+                <a href="/payment.html" class="header__dropdown-link">Оплата</a>
+                <a href="/usefulLinks.html" class="header__dropdown-link">Полезные ссылки</a>
+                <a href="/contactsDriving.html" class="header__dropdown-link">Контакты</a>
+                <a href="https://docs.google.com/forms/d/e/1FAIpQLSeCgdvO_PecQL3J3yieer_DCHZ9UsG6QxflBaeigciAwMsqfg/viewform"
+                    class="header__dropdown-link" rel="external">Опрос по качеству</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Header -->
+
+    <!-- Modal Log in -->
+
+    <section id="myModal" class="modal">
+        <div class="modal__wrapper">
+
+            <!-- Authorization -->
+
+            <form class="modal__registration-block" method="POST" action="">
+                <span class="modal__close" onclick="closeModal()">&times;</span>
+                <input type="text" required name="login" placeholder="Введите логин">
+                <input type="password" required name="password" placeholder="Введите пароль">
+                <button type="submit" class="registration__btn" name="button">Войти</button>
+            </form>
+
+            <!-- Authorization -->
+
+        </div>
+    </section>
+
+    <!-- Modal Log in -->
+
+    <!-- Contact -->
+
+    <section class="contact center">
+        <div class="contact__general container__general">
+            <h1>Контакты</h1>
+            <div class="contact__inner">
+                <p class="general__text"><span class="general__weight">Адрес:</span> 157000, Костромская область, город
+                    Буй, площадь Хазова, дом 1</p>
+                <p class="general__text general__weight">Директор:</p>
+                <p class="general__text">
+                    - Федоренко Дмитрий Леонидович <br>
+                    - Телефон: 8(910)921-46-12 <br>
+                    - E-mail: ledoff2008@gmail.com
+                </p>
+                <p class="general__text general__weight">Заместитель директора по учебной работе:</p>
+                <p class="general__text">
+                    - Кустова Татьяна Владимировна <br>
+                    - Телефон: 8 (49435) 4-40-24 <br>
+                    - E-mail: tatyanakustova@yandex.ru
+                </p>
+                <p class="general__text general__weight">Бухгалтерия:</p>
+                <p class="general__text">
+                    - Главный бухгалтер: Смирнова Ольга Александровна <br>
+                    - Телефон/факс: 8 (49435) 4-40-26 <br>
+                    - E-mail: bsht.buh@yandex.ru
+                </p>
+                <p class="general__text general__weight">Приемная:</p>
+                <p class="general__text">
+                    - Телефон: 8 (49435) 4-40-25 <br>
+                    - E-mail: bsht_s@mail.ru
+                </p>
+                <p class="general__text general__weight">Учебная часть:</p>
+                <p class="general__text">
+                    - Секретарь учебной части: Любимова Марина Михайловна <br>
+                    - Телефон: 8 (49435) 4-03-34​ <br>
+                    - E-mail: priem-btgp@mail.ru
+                </p>
+                <p class="general__text general__weight">Дневное отделение:</p>
+                <p class="general__text">
+                    - Заведующая дневным отделением: Трифонова Наталия Геньевна <br>
+                    - Телефон: 8 (49435) 4-03-34​, <br>
+                    - E-mail: 3fonovan@mail.ru
+                </p>
+                <p class="general__text general__weight">Заочное отделение:</p>
+                <p class="general__text">
+                    - Заведующая заочным отделением: Чистякова Татьяна Владимировна. <br>
+                    - Телефон: 8(49435) 4-40-28 <br>
+                    - E-mail: btgpzo@gmail.com
+                </p>
+                <p class="general__text general__weight">Заведующая производственным обучением:</p>
+                <p class="general__text">
+                    - Павлова Елена Михайловна <br>
+                    - Телефон: 8 (49435) 4-03-34 <br>
+                    - E-mail: pavlova2703@yandex.ru
+                </p>
+                <p class="general__text general__weight">Заведующая по воспитательной работе:</p>
+                <p class="general__text">
+                    - Соболева Татьяна Михайловна <br>
+                    - Телефон: 8(49435)4-10-28 <br>
+                    - E-mail: soboleva77d@rambler.ru
+                </p>
+                <p class="general__text general__weight">Заведующие информационным центром:</p>
+                <p class="general__text">
+                    - Лебедев Дмитрий Валерьевич <br>
+                    - Телефон: 8(953)658-35-10 <br>
+                    - E-mail: lebedew94dima@yandex.ru <br>
+                    - Уваров Геннадий Валерьевич <br>
+                    - Телефон: 8(920)380-36-03 <br>
+                    - E-mail: -
+                </p>
+                <p class="general__text general__weight">Заведующая отделением профессионального обучения и
+                    дополнительного
+                    профессионального
+                    образования:</p>
+                <p class="general__text">
+                    - Ткаченко Ольга Геннадьевна <br>
+                    - Телефон: +7(910)802-15-22, <br>
+                    - E-mail: btgpzo@gmail.com
+                </p>
+                <p class="general__text general__weight">Методист:</p>
+                <p class="general__text">
+                    - Кустова Татьяна Владимировна <br>
+                    - Телефон: 8(960)741-97-18 <br>
+                    - E-mail: -
+                </p>
+                <p class="general__text general__weight">Отдел кадров:</p>
+                <p class="general__text">
+                    - Барковская Антонина Ивановна <br>
+                    - Телефон: 8(49435) 4-40-28 <br>
+                    - E-mail: karde.btgp.2008-14@yandex.ru
+                </p>
+                <p class="general__text general__weight">Отдел кадров:</p>
+                <p class="general__text">
+                    - Барковская Антонина Ивановна <br>
+                    - Телефон: 8(49435) 4-40-28 <br>
+                    - E-mail: karde.btgp.2008-14@yandex.ru
+                </p>
+                <p class="general__text general__weight">Общежитие:</p>
+                <p class="general__text">
+                    - Адрес: 157000, Костромская область, город Буй, улица Карла Маркса, дом 41. <br>
+                    - Телефон: 8 (49435) 4-40-29 <br>
+                    - Комендант общежития: Малкова Виталия Юрьевна
+                </p>
+                <p class="general__text general__weight">График работы:</p>
+                <p class="general__text">
+                    - Пн.-пт. - с 8:30 до 17:00 (обед с 12:00 до 13:00); <br>
+                    - Сб. - с 8:30 до 12:20 (без обеда); <br>
+                    - Вс - выходной.
+                </p>
+                <p class="general__text">Дополнительную информацию вы можете найти в разделе "Руководство.
+                    Педагогический состав"</p>
+            </div>
+        </div>
+        <script type="text/javascript" charset="utf-8" async
+            src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A04e8015ed5f5c5e4ab43536b241e1f9aac0f4e7ea13af07d683c7ce32c4fd2a3&amp;width=100%25&amp;height=645&amp;lang=ru_RU&amp;scroll=true">
+        </script>
+    </section>
+
+    <!-- Contact -->
+
+    <!-- Footer -->
+
+    <footer class="footer center">
+        <div class="footer__wrapper container__general">
+            <div class="footer__block">
+                <h2 class="footer__title">Навигация</h2>
+                <a href="#" class="footer__link">SiteMap</a>
+                <a href="#" class="footer__link">Главная</a>
+                <a href="#" class="footer__link">Центр развития карьеры</a>
+                <a href="#" class="footer__link">Профессиональные пробы</a>
+                <a href="#" class="footer__link">Форма "коррупции - нет"</a>
+                <a href="#" class="footer__link">Обращения граждан</a>
+            </div>
+            <div class="footer__block">
+                <h2 class="footer__title">О нас</h2>
+                <a href="#" class="footer__link">СМИ о нас</a>
+                <a href="#" class="footer__link">Опросы и анкеты</a>
+                <a href="#" class="footer__link">Задать вопрос</a>
+                <a href="#" class="footer__link">Оставить отзыв о работе</a>
+                <a href="#" class="footer__link">Демонстрационный экзамен</a>
+                <a href="#" class="footer__link">Образование (старое)</a>
+            </div>
+            <div class="footer__block">
+                <h2 class="footer__title">Соцсети</h2>
+                <a href="#" class="footer__link">Мы в Twitter</a>
+                <a href="#" class="footer__link">Мы в Facebook</a>
+                <a href="#" class="footer__link">Мы в Google+</a>
+                <a href="#" class="footer__link">Группа Автошколы в ВК</a>
+                <a href="#" class="footer__link">Независимая система оценки качества</a>
+                <a href="#" class="footer__link">Электронная библиотека ЮРАЙТ</a>
+                <a href="#" class="footer__link">Регистрации в электронной библиотеке </a>
+            </div>
+            <div class="footer__block">
+                <button class="footer__modal-btn" data-hover="Нажми на меня!" onclick="footerModal()">
+                    <div>Задать вопрос</div>
+                </button>
+                <div class="footer__social">
+                    <a href="#" class="footer__social-icon">
+                        <i class="fab fa-vk footer__social-additionally"></i>
+                    </a>
+                    <a href="#" class="footer__social-icon">
+                        <i class="fab fa-odnoklassniki-square footer__social-additionally"></i>
+                    </a>
+                    <a href="#" class="footer__social-icon">
+                        <i class="fab fa-youtube footer__social-additionally"></i>
+                    </a>
+                </div>
+
+                <!-- Modal Questions -->
+
+                <div id="myModalFooter" class="modal">
+                    <div class="modal__wrapper">
+
+                        <!-- Form Footer -->
+
+                        <form class="modal__registration-block" method="POST" action="">
+                            <span class="modal__close" onclick="closeModalFooter()">&times;</span>
+                            <input type="text" required name="login" placeholder="Ваше имя">
+                            <input type="email" required name="password" placeholder="Ваш e-mail">
+                            <input type="number" required name="password" placeholder="Номер телефона">
+                            <textarea type="text" class="news__registration-text" required name="text"
+                                placeholder="Введите текст"></textarea>
+                            <div class="news__file">
+                                <input type="file" class="registration__file" name="file" multiple />
+                                <button type="button" class="registration__btn registration__remove">Удалить
+                                    файлы</button>
+                            </div>
+                            <button type="submit" class="registration__btn" name="button">Отправить</button>
+                        </form>
+
+                        <!-- Form Footer -->
+
+                    </div>
+                </div>
+
+                <!-- Modal Questions -->
+
+            </div>
+        </div>
+    </footer>
+
+    <!-- Footer -->
+
+    <script src="/js/main.js"></script>
+</body>

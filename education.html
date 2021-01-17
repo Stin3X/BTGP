@@ -1,0 +1,1098 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>BTGP</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://kit.fontawesome.com/c8a8e1c510.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="swiper/css/swiper.css" />
+</head>
+
+<body>
+
+    <!-- Header -->
+
+    <header class="header center">
+        <div class="header__wrapper container__general">
+            <div class="header__general">
+                <div class="header__logo"></div>
+            </div>
+            <nav class="header__nav">
+                <a id="linkOne" href="/index.html" class="nav__link" onclick="linkTransitionOne()">Новости</a>
+                <a id="linkTwo" href="#" class="nav__link nav__link-bg" onclick="linkTransitionTwo()">Сведения об
+                    образовательной
+                    организации</a>
+                <a id="linkThree" href="#" class="nav__link" onclick="linkTransitionThree()">Абитуриенту</a>
+                <a id="linkFour" href="#" class="nav__link" onclick="linkTransitionFour()">Дистанционное обучение</a>
+                <a id="linkFive" href="#" class="nav__link" onclick="linkTransitionFive()">Расписание</a>
+                <a id="linkSix" href="#" class="nav__link" onclick="linkTransitionSix()">Автошкола</a>
+                <a id="linkSeven" href="/contact.html" class="nav__link" onclick="linkTransitionSeven()">Контакты</a>
+                <a id="linkEight" href="#" class="nav__link" onclick="linkTransitionEight()">Войти</a>
+            </nav>
+            <div id="dropdownOne" class="header__dropdown header__dropdown-one">
+                <a href="/BasicInformation.html" class="header__dropdown-link">Основные сведения</a>
+                <a href="/structure.html" class="header__dropdown-link">Структура и органы управления образовательной
+                    организацией</a>
+                <a href="/organizationDocuments.html" class="header__dropdown-link">Документы</a>
+                <a href="/education.html" class="header__dropdown-link">Образование</a>
+                <a href="#" class="header__dropdown-link">Образовательные стандарты</a>
+                <a href="#" class="header__dropdown-link">Руководство. Педагогический состав</a>
+                <a href="#" class="header__dropdown-link">Материально-техническое обеспечение и оснащённость
+                    образовательного процесса</a>
+                <a href="#" class="header__dropdown-link">Стипендии и иные виды материальной поддержки</a>
+                <a href="#" class="header__dropdown-link">Платные образовательные услуги</a>
+                <a href="#" class="header__dropdown-link">Вакантные места для приёма (перевода)</a>
+                <a href="#" class="header__dropdown-link">Рабочие программы</a>
+                <a href="#" class="header__dropdown-link">Коррупции - нет</a>
+                <a href="#" class="header__dropdown-link">Закупки</a>
+            </div>
+            <div id="dropdownTwo" class="header__dropdown header__dropdown-two">
+                <a href="#" class="header__dropdown-link">Приемная комиссия</a>
+                <a href="#" class="header__dropdown-link">Документы для поступления</a>
+                <a href="#" class="header__dropdown-link">День открытых дверей</a>
+                <a href="#" class="header__dropdown-link">Общежитие</a>
+                <a href="#" class="header__dropdown-link">Стипендия</a>
+                <a href="#" class="header__dropdown-link">Контрольные цифры приема 2020-2021</a>
+                <a href="#" class="header__dropdown-link">Профессиональные пробы</a>
+                <a href="#" class="header__dropdown-link">Условия обучения лиц с ОВЗ и инвалидностью</a>
+                <a href="#" class="header__dropdown-link">Порядок приема лиц с ОВЗ и инвалидностью</a>
+                <a href="#" class="header__dropdown-link">Сведения о поданных заявлениях и зачисленных абитуриентах </a>
+                <a href="#" class="header__dropdown-link">Правила приема</a>
+                <a href="#" class="header__dropdown-link">Библиотека</a>
+                <a href="#" class="header__dropdown-link">Перечень специальностей, требования к уровню образования</a>
+                <a href="#" class="header__dropdown-link">Условия приема на обучение по договорам об оказании платных
+                    услуг</a>
+                <a href="#" class="header__dropdown-link">Количество мест по договорам об оказании платных
+                    образовательных услуг</a>
+                <a href="#" class="header__dropdown-link">Договор об оказании платных услуг по программам СПО</a>
+            </div>
+            <div id="dropdownThree" class="header__dropdown header__dropdown-three">
+                <a href="#" class="header__dropdown-link">Перейти на сайт moodle.btgp.ru</a>
+            </div>
+            <div id="dropdownFour" class="header__dropdown header__dropdown-four">
+                <a href="#" class="header__dropdown-link">Замены в расписании (дневное отделение)</a>
+            </div>
+            <div id="dropdownFive" class="header__dropdown header__dropdown-five">
+                <a href="/carpark.html" class="header__dropdown-link">Автопарк</a>
+                <a href="/documents.html" class="header__dropdown-link">Документы</a>
+                <a href="/masters.html" class="header__dropdown-link">Мастера производственного обучения</a>
+                <a href="/closedArea.html" class="header__dropdown-link">Закрытая площадка</a>
+                <a href="/payment.html" class="header__dropdown-link">Оплата</a>
+                <a href="/usefulLinks.html" class="header__dropdown-link">Полезные ссылки</a>
+                <a href="/contactsDriving.html" class="header__dropdown-link">Контакты</a>
+                <a href="https://docs.google.com/forms/d/e/1FAIpQLSeCgdvO_PecQL3J3yieer_DCHZ9UsG6QxflBaeigciAwMsqfg/viewform"
+                    class="header__dropdown-link" rel="external">Опрос по качеству</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Header -->
+
+    <!-- Intro -->
+
+    <section class="intro">
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="intro__inner">
+                        <div class="intro__block">
+                            <h1 class="intro__title">Приглашаем на обучение</h1>
+                            <p class="intro__date">2 года 10 месяцев</p>
+                            <p class="intro__text">Гостиничный сервис</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="intro__inner">
+                        <div class="intro__block">
+                            <h1 class="intro__title">Приглашаем на обучение</h1>
+                            <p class="intro__date">2 года 10 месяцев</p>
+                            <p class="intro__text">Коммерция (по отраслям)</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="intro__inner">
+                        <div class="intro__block">
+                            <h1 class="intro__title">Приглашаем на обучение</h1>
+                            <p class="intro__date">3 года 10 месяцев</p>
+                            <p class="intro__text intro__width-one">Строительство и эксплуатация зданий и сооружений</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="intro__inner">
+                        <div class="intro__block">
+                            <h1 class="intro__title">Приглашаем на обучение</h1>
+                            <p class="intro__date">2 года 10 месяцев</p>
+                            <p class="intro__text intro__width-two">Земельно-имущественные отношения</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="intro__inner">
+                        <div class="intro__block">
+                            <h1 class="intro__title">Приглашаем на обучение</h1>
+                            <p class="intro__date">3 года 10 месяцев</p>
+                            <p class="intro__text intro__width-three">Информационные системы и программирование</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="intro__inner">
+                        <div class="intro__block">
+                            <h1 class="intro__title">Приглашаем на обучение</h1>
+                            <p class="intro__date">3 года 10 месяцев</p>
+                            <p class="intro__text intro__width-four">Управление, эксплуатация и обслуживание
+                                многоквартирного дома</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div>
+        </div>
+    </section>
+
+    <!-- Intro -->
+
+    <!-- Education -->
+
+    <section class="education center">
+        <div class="education__general container__general">
+            <h1>Образование</h1>
+            <div class="accordion">
+                <div class="accordion-item">
+                    <div class="accordion-item__triger">
+                        Очная форма обучения
+                    </div>
+                    <div class="accordion-item__content">
+                        <div class="education__wrapper">
+                            <h2>Программы подготовки специалистов среднего звена (очная форма обучения):</h2>
+                            <div class="education__inner">
+                                <h4 class="reset__ident">09.02.04 Информационные системы (по отраслям)</h4>
+                                <a href="#" class="education__link general__text" rel="external">
+                                    Кол-во мaтериалов: 4
+                                </a>
+                            </div>
+                            <div class="education__block">
+                                <p class="general__text general__weight">Вид программы:</p>
+                                <p class="general__text">Программа подготовки специалистов среднего звена</p>
+                                <p class="general__text general__weight">Код профессии/специальности:</p>
+                                <p class="general__text">09.02.04</p>
+                                <p class="general__text general__weight">
+                                    Наименование укрупненной группы профессий/специальностей:
+                                </p>
+                                <p class="general__text">Информатика и вычислительная техника</p>
+                                <p class="general__text general__weight">Форма обучения:</p>
+                                <p class="general__text">Очная, заочная (на базе 11 классов)</p>
+                                <p class="general__text general__weight">Образовательная база приема:</p>
+                                <p class="general__text">9 классов, 11 классов (заочная форма обучения)</p>
+                                <p class="general__text general__weight">Квалификация, разряд выпускника:</p>
+                                <p class="general__text">Техник по информационным системам</p>
+                                <p class="general__text general__weight">Срок обучения (лет, мес):</p>
+                                <p class="general__text">3,10</p>
+                                <p class="general__text general__weight">
+                                    Срок действия государственной аккредитации образовательной программы:
+                                </p>
+                                <p class="general__text">План на 2019 год</p>
+                            </div>
+
+                            <div class="education__inner">
+                                <h4 class="reset__ident">08.02.11 Управление, эксплуатация и обслуживание
+                                    многоквартирного
+                                    дома
+                                </h4>
+                                <a href="#" class="education__link general__text" rel="external">Кол-во мaтериалов:
+                                    0</a>
+                            </div>
+                            <div class="education__block">
+                                <p class="general__text general__weight">Вид программы:</p>
+                                <p class="general__text">Программа подготовки специалистов среднего звена</p>
+                                <p class="general__text general__weight">Код профессии/специальности:</p>
+                                <p class="general__text">08.02.11</p>
+                                <p class="general__text general__weight">Форма обучения:</p>
+                                <p class="general__text">Очная, заочная (на базе 11 классов)</p>
+                                <p class="general__text general__weight">Образовательная база приема:</p>
+                                <p class="general__text">9 классов, 11 классов (заочная форма обучения)</p>
+                                <p class="general__text general__weight">Квалификация, разряд выпускника:</p>
+                                <p class="general__text">Техник</p>
+                                <p class="general__text general__weight">Срок обучения (лет, мес):</p>
+                                <p class="general__text">3,10</p>
+                                <p class="general__text general__weight">
+                                    Срок действия государственной аккредитации образовательной программы:
+                                </p>
+                                <p class="general__text">План на 2019 год</p>
+                            </div>
+
+                            <div class="education__inner">
+                                <h4 class="reset__ident">21.02.05 Земельно-имущественные отношения</h4>
+                                <a href="#" class="education__link general__text" rel="external">Кол-во мaтериалов:
+                                    0</a>
+                            </div>
+                            <div class="education__block">
+                                <p class="general__text general__weight">Вид программы:</p>
+                                <p class="general__text">Программа подготовки специалистов среднего звена</p>
+                                <p class="general__text general__weight">Код профессии/специальности:</p>
+                                <p class="general__text">21.02.05</p>
+                                <p class="general__text general__weight">Форма обучения:</p>
+                                <p class="general__text">Очная, заочная (на базе 11 классов)</p>
+                                <p class="general__text general__weight">Образовательная база приема:</p>
+                                <p class="general__text">9 классов, 11 классов (заочная форма обучения)</p>
+                                <p class="general__text general__weight">Квалификация, разряд выпускника:</p>
+                                <p class="general__text">Специалист по земельно-имущественным отношениям</p>
+                                <p class="general__text general__weight">Срок обучения (лет, мес):</p>
+                                <p class="general__text">2,10</p>
+                                <p class="general__text general__weight">
+                                    Срок действия государственной аккредитации образовательной программы:
+                                </p>
+                                <p class="general__text">До 05.12.2019 года</p>
+                            </div>
+
+                            <div class="education__inner">
+                                <h4 class="reset__ident">43.02.11 Гостиничный сервис</h4>
+                                <a href="#" class="education__link general__text" rel="external">Кол-во мaтериалов:
+                                    4</a>
+                            </div>
+                            <div class="education__block">
+                                <p class="general__text general__weight">Вид программы:</p>
+                                <p class="general__text">Программа подготовки специалистов среднего звена</p>
+                                <p class="general__text general__weight">Код профессии/специальности:</p>
+                                <p class="general__text">43.02.11</p>
+                                <p class="general__text general__weight">
+                                    Наименование укрупненной группы профессий/специальностей:
+                                </p>
+                                <p class="general__text">Сервис и туризм</p>
+                                <p class="general__text general__weight">Форма обучения:</p>
+                                <p class="general__text">Очная, заочная (на базе 11 классов)</p>
+                                <p class="general__text general__weight">Образовательная база приема:</p>
+                                <p class="general__text">9 классов, 11 классов (заочная форма обучения)</p>
+                                <p class="general__text general__weight">Квалификация, разряд выпускника:</p>
+                                <p class="general__text">Менеджер</p>
+                                <p class="general__text general__weight">Срок обучения (лет, мес):</p>
+                                <p class="general__text">2,10</p>
+                                <p class="general__text general__weight">
+                                    Срок действия государственной аккредитации образовательной программы:
+                                </p>
+                                <p class="general__text">План на 2019 год</p>
+                            </div>
+
+                            <div class="education__inner">
+                                <h4 class="reset__ident">38.02.04 Коммерция (по отраслям)</h4>
+                                <a href="#" class="education__link general__text" rel="external">Кол-во мaтериалов:
+                                    4</a>
+                            </div>
+                            <div class="education__block">
+                                <p class="general__text general__weight">Вид программы:</p>
+                                <p class="general__text">Программа подготовки специалистов среднего звена</p>
+                                <p class="general__text general__weight">Код профессии/специальности:</p>
+                                <p class="general__text">38.02.04</p>
+                                <p class="general__text general__weight">
+                                    Наименование укрупненной группы профессий/специальностей:
+                                </p>
+                                <p class="general__text">Экономика и управление</p>
+                                <p class="general__text general__weight">Форма обучения:</p>
+                                <p class="general__text">Очная, заочная (на базе 11 классов)</p>
+                                <p class="general__text general__weight">Образовательная база приема:</p>
+                                <p class="general__text">9 классов, 11 классов (заочная форма обучения)</p>
+                                <p class="general__text general__weight">Квалификация, разряд выпускника:</p>
+                                <p class="general__text">Менеджер по продажам</p>
+                                <p class="general__text general__weight">Срок обучения (лет, мес):</p>
+                                <p class="general__text">2,10</p>
+                                <p class="general__text general__weight">
+                                    Срок действия государственной аккредитации образовательной программы:
+                                </p>
+                                <p class="general__text">План на 2019 год</p>
+                            </div>
+
+                            <div class="education__inner">
+                                <h4 class="reset__ident">08.02.01 Строительство и эксплуатация зданий и сооружений</h4>
+                                <a href="#" class="education__link general__text" rel="external">Кол-во мaтериалов:
+                                    4</a>
+                            </div>
+                            <div class="education__block">
+                                <p class="general__text general__weight">Вид программы:</p>
+                                <p class="general__text">Программа подготовки специалистов среднего звена</p>
+                                <p class="general__text general__weight">Код профессии/специальности:</p>
+                                <p class="general__text">08.02.01</p>
+                                <p class="general__text general__weight">
+                                    Наименование укрупненной группы профессий/специальностей:
+                                </p>
+                                <p class="general__text">Техника и технологии строительства</p>
+                                <p class="general__text general__weight">Форма обучения:</p>
+                                <p class="general__text">Очная, заочная (на базе 11 классов)</p>
+                                <p class="general__text general__weight">Образовательная база приема:</p>
+                                <p class="general__text">9 классов, 11 классов (заочная форма обучения)</p>
+                                <p class="general__text general__weight">Квалификация, разряд выпускника:</p>
+                                <p class="general__text">Техник</p>
+                                <p class="general__text general__weight">Срок обучения (лет, мес):</p>
+                                <p class="general__text">3,10</p>
+                                <p class="general__text general__weight">
+                                    Срок действия государственной аккредитации образовательной программы:
+                                </p>
+                                <p class="general__text">До 05.12.2019 года</p>
+                            </div>
+
+                            <div class="education__inner">
+                                <h4 class="reset__ident">08.01.08 Мастер отделочных строительных работ</h4>
+                                <a href="#" class="education__link general__text" rel="external">Кол-во мaтериалов:
+                                    4</a>
+                            </div>
+                            <div class="education__block">
+                                <p class="general__text general__weight">Вид программы:</p>
+                                <p class="general__text">Программа подготовки специалистов среднего звена</p>
+                                <p class="general__text general__weight">Код профессии/специальности:</p>
+                                <p class="general__text">08.01.08</p>
+                                <p class="general__text general__weight">
+                                    Наименование укрупненной группы профессий/специальностей:
+                                </p>
+                                <p class="general__text">Техника и технологии строительства</p>
+                                <p class="general__text general__weight">Форма обучения:</p>
+                                <p class="general__text">Очная</p>
+                                <p class="general__text general__weight">Образовательная база приема:</p>
+                                <p class="general__text">9 классов</p>
+                                <p class="general__text general__weight">Квалификация, разряд выпускника:</p>
+                                <p class="general__text">Облицовщик-плиточник</p>
+                                <p class="general__text general__weight">Срок обучения (лет, мес):</p>
+                                <p class="general__text">2,10</p>
+                                <p class="general__text general__weight">
+                                    Срок действия государственной аккредитации образовательной программы:
+                                </p>
+                                <p class="general__text">План на 2019 год</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion">
+                <div class="accordion-item">
+                    <div class="accordion-item__triger">
+                        Заочная форма обучения
+                    </div>
+                    <div class="accordion-item__content">
+                        <div class="education__wrapper">
+                            <h2>Программы подготовки специалистов среднего звена (заочная форма обучения):</h2>
+                            <div class="education__inner">
+                                <h4 class="reset__ident">38.02.01 Экономика и бухгалтерский учет (по отраслям)</h4>
+                                <a href="#" class="education__link general__text" rel="external">
+                                    Кол-во мaтериалов: 2
+                                </a>
+                            </div>
+                            <div class="education__block">
+                                <p class="general__text general__weight">Вид программы:</p>
+                                <p class="general__text">Программа подготовки специалистов среднего звена</p>
+                                <p class="general__text general__weight">Код профессии/специальности:</p>
+                                <p class="general__text">38.02.01</p>
+                                <p class="general__text general__weight">
+                                    Наименование укрупненной группы профессий/специальностей:
+                                </p>
+                                <p class="general__text">Экономика и управление</p>
+                                <p class="general__text general__weight">Форма обучения:</p>
+                                <p class="general__text">Очная, заочная (на базе 11 классов)</p>
+                                <p class="general__text general__weight">Образовательная база приема:</p>
+                                <p class="general__text">9 классов, 11 классов (заочная форма обучения)</p>
+                                <p class="general__text general__weight">Квалификация, разряд выпускника:</p>
+                                <p class="general__text">Бухгалтер</p>
+                                <p class="general__text general__weight">Срок обучения (лет, мес):</p>
+                                <p class="general__text">2,10</p>
+                                <p class="general__text general__weight">
+                                    Срок действия государственной аккредитации образовательной программы:
+                                </p>
+                                <p class="general__text">До 05.12.2019 года</p>
+                            </div>
+                            <div class="education__inner">
+                                <h4 class="reset__ident">09.02.04 Информационные системы (по отраслям)
+                                    дома
+                                </h4>
+                                <a href="#" class="education__link general__text" rel="external">Кол-во мaтериалов:
+                                    2</a>
+                            </div>
+                            <div class="education__block">
+                                <p class="general__text general__weight">Вид программы:</p>
+                                <p class="general__text">Программа подготовки специалистов среднего звена</p>
+                                <p class="general__text general__weight">Код профессии/специальности:</p>
+                                <p class="general__text">09.02.04</p>
+                                <p class="general__text general__weight">Наименование укрупненной группы
+                                    профессий/специальностей:</p>
+                                <p class="general__text general__weight">Информатика и вычислительная техника</p>
+                                <p class="general__text general__weight">Форма обучения:</p>
+                                <p class="general__text">Очная, заочная (на базе 11 классов)</p>
+                                <p class="general__text general__weight">Образовательная база приема:</p>
+                                <p class="general__text">9 классов, 11 классов (заочная форма обучения)</p>
+                                <p class="general__text general__weight">Квалификация, разряд выпускника:</p>
+                                <p class="general__text">Техник по информационным системам</p>
+                                <p class="general__text general__weight">Срок обучения (лет, мес):</p>
+                                <p class="general__text">3,10</p>
+                                <p class="general__text general__weight">
+                                    Срок действия государственной аккредитации образовательной программы:
+                                </p>
+                                <p class="general__text">План на 2019 год</p>
+                            </div>
+                            <div class="education__inner">
+                                <h4 class="reset__ident">08.02.11 Управление, эксплуатация и обслуживание
+                                    многоквартирного дома</h4>
+                                <a href="#" class="education__link general__text" rel="external">Кол-во мaтериалов:
+                                    2</a>
+                            </div>
+                            <div class="education__block">
+                                <p class="general__text general__weight">Вид программы:</p>
+                                <p class="general__text">Программа подготовки специалистов среднего звена</p>
+                                <p class="general__text general__weight">Код профессии/специальности:</p>
+                                <p class="general__text">08.02.11</p>
+                                <p class="general__text general__weight">Форма обучения:</p>
+                                <p class="general__text">Заочная (на базе 11 классов)</p>
+                                <p class="general__text general__weight">Образовательная база приема:</p>
+                                <p class="general__text">11 классов (заочная форма обучения)</p>
+                                <p class="general__text general__weight">Квалификация, разряд выпускника:</p>
+                                <p class="general__text">Специалист по земельно-имущественным отношениям</p>
+                                <p class="general__text general__weight">Срок обучения (лет, мес):</p>
+                                <p class="general__text">2,10</p>
+                                <p class="general__text general__weight">
+                                    Срок действия государственной аккредитации образовательной программы:
+                                </p>
+                                <p class="general__text">До 05.12.2019 года</p>
+                            </div>
+                            <div class="education__inner">
+                                <h4 class="reset__ident">21.02.05 Земельно-имущественные отношения</h4>
+                                <a href="#" class="education__link general__text" rel="external">Кол-во мaтериалов:
+                                    2</a>
+                            </div>
+                            <div class="education__block">
+                                <p class="general__text general__weight">Вид программы:</p>
+                                <p class="general__text">Программа подготовки специалистов среднего звена</p>
+                                <p class="general__text general__weight">Код профессии/специальности:</p>
+                                <p class="general__text">21.02.05</p>
+                                <p class="general__text general__weight">
+                                    Наименование укрупненной группы профессий/специальностей:
+                                </p>
+                                <p class="general__text">Сервис и туризм</p>
+                                <p class="general__text general__weight">Форма обучения:</p>
+                                <p class="general__text">Заочная (на базе 11 классов)</p>
+                                <p class="general__text general__weight">Образовательная база приема:</p>
+                                <p class="general__text">11 классов (заочная форма обучения)</p>
+                                <p class="general__text general__weight">Квалификация, разряд выпускника:</p>
+                                <p class="general__text">Специалист по земельно-имущественным отношениям</p>
+                                <p class="general__text general__weight">Срок обучения (лет, мес):</p>
+                                <p class="general__text">2,10</p>
+                                <p class="general__text general__weight">
+                                    Срок действия государственной аккредитации образовательной программы:
+                                </p>
+                                <p class="general__text">До 05.12.2019 года</p>
+                            </div>
+                            <div class="education__inner">
+                                <h4 class="reset__ident">43.02.11 Гостиничный сервис</h4>
+                                <a href="#" class="education__link general__text" rel="external">Кол-во мaтериалов:
+                                    2</a>
+                            </div>
+                            <div class="education__block">
+                                <p class="general__text general__weight">Вид программы:</p>
+                                <p class="general__text">Программа подготовки специалистов среднего звена</p>
+                                <p class="general__text general__weight">Код профессии/специальности:</p>
+                                <p class="general__text">43.02.11</p>
+                                <p class="general__text general__weight">
+                                    Наименование укрупненной группы профессий/специальностей:
+                                </p>
+                                <p class="general__text">Сервис и туризм</p>
+                                <p class="general__text general__weight">Форма обучения:</p>
+                                <p class="general__text">Заочная (на базе 11 классов)</p>
+                                <p class="general__text general__weight">Образовательная база приема:</p>
+                                <p class="general__text">11 классов (заочная форма обучения)</p>
+                                <p class="general__text general__weight">Квалификация, разряд выпускника:</p>
+                                <p class="general__text">Менеджер</p>
+                                <p class="general__text general__weight">Срок обучения (лет, мес):</p>
+                                <p class="general__text">2,10</p>
+                                <p class="general__text general__weight">
+                                    Срок действия государственной аккредитации образовательной программы:
+                                </p>
+                                <p class="general__text">План на 2019 год</p>
+                            </div>
+                            <div class="education__inner">
+                                <h4 class="reset__ident">38.02.04 Коммерция (по отраслям)</h4>
+                                <a href="#" class="education__link general__text" rel="external">Кол-во мaтериалов:
+                                    2</a>
+                            </div>
+                            <div class="education__block">
+                                <p class="general__text general__weight">Вид программы:</p>
+                                <p class="general__text">Программа подготовки специалистов среднего звена</p>
+                                <p class="general__text general__weight">Код профессии/специальности:</p>
+                                <p class="general__text">38.02.04</p>
+                                <p class="general__text general__weight">
+                                    Наименование укрупненной группы профессий/специальностей:
+                                </p>
+                                <p class="general__text">Экономика и управление</p>
+                                <p class="general__text general__weight">Форма обучения:</p>
+                                <p class="general__text">Очная, заочная (на базе 11 классов)</p>
+                                <p class="general__text general__weight">Образовательная база приема:</p>
+                                <p class="general__text">9 классов, 11 классов (заочная форма обучения)</p>
+                                <p class="general__text general__weight">Квалификация, разряд выпускника:</p>
+                                <p class="general__text">Менеджер по продажам</p>
+                                <p class="general__text general__weight">Срок обучения (лет, мес):</p>
+                                <p class="general__text">2,10</p>
+                                <p class="general__text general__weight">
+                                    Срок действия государственной аккредитации образовательной программы:
+                                </p>
+                                <p class="general__text">План на 2019 год</p>
+                            </div>
+                            <div class="education__inner">
+                                <h4 class="reset__ident">08.02.01 Строительство и эксплуатация зданий и сооружений</h4>
+                                <a href="#" class="education__link general__text" rel="external">Кол-во мaтериалов:
+                                    4</a>
+                            </div>
+                            <div class="education__block">
+                                <p class="general__text general__weight">Вид программы:</p>
+                                <p class="general__text">Программа подготовки специалистов среднего звена</p>
+                                <p class="general__text general__weight">Код профессии/специальности:</p>
+                                <p class="general__text">08.02.01</p>
+                                <p class="general__text general__weight">
+                                    Наименование укрупненной группы профессий/специальностей:
+                                </p>
+                                <p class="general__text">Техника и технологии строительства</p>
+                                <p class="general__text general__weight">Форма обучения:</p>
+                                <p class="general__text">Очная, заочная (на базе 11 классов)</p>
+                                <p class="general__text general__weight">Образовательная база приема:</p>
+                                <p class="general__text">9 классов, 11 классов (заочная форма обучения)</p>
+                                <p class="general__text general__weight">Квалификация, разряд выпускника:</p>
+                                <p class="general__text">Техник</p>
+                                <p class="general__text general__weight">Срок обучения (лет, мес):</p>
+                                <p class="general__text">3,10</p>
+                                <p class="general__text general__weight">
+                                    Срок действия государственной аккредитации образовательной программы:
+                                </p>
+                                <p class="general__text">До 05.12.2019 года</p>
+                            </div>
+                            <div class="education__inner">
+                                <h4 class="reset__ident">08.01.08 Мастер отделочных строительных работ</h4>
+                                <a href="#" class="education__link general__text" rel="external">Кол-во мaтериалов:
+                                    4</a>
+                            </div>
+                            <div class="education__block">
+                                <p class="general__text general__weight">Вид программы:</p>
+                                <p class="general__text">Программа подготовки специалистов среднего звена</p>
+                                <p class="general__text general__weight">Код профессии/специальности:</p>
+                                <p class="general__text">08.01.08</p>
+                                <p class="general__text general__weight">
+                                    Наименование укрупненной группы профессий/специальностей:
+                                </p>
+                                <p class="general__text">Техника и технологии строительства</p>
+                                <p class="general__text general__weight">Форма обучения:</p>
+                                <p class="general__text">Очная</p>
+                                <p class="general__text general__weight">Образовательная база приема:</p>
+                                <p class="general__text">9 классов</p>
+                                <p class="general__text general__weight">Квалификация, разряд выпускника:</p>
+                                <p class="general__text">Облицовщик-плиточник</p>
+                                <p class="general__text general__weight">Срок обучения (лет, мес):</p>
+                                <p class="general__text">2,10</p>
+                                <p class="general__text general__weight">
+                                    Срок действия государственной аккредитации образовательной программы:
+                                </p>
+                                <p class="general__text">План на 2019 год</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion">
+                <div class="accordion-item">
+                    <div class="accordion-item__triger">
+                        Итоговая аттестация
+                    </div>
+                    <div class="accordion-item__content">
+                        <div class="education__wrapper">
+                            <h2>Государственная итоговая аттестация:</h2>
+
+                            <!-- Attachments -->
+
+                            <div class="attachments attachments__indent">
+                                <h4>Вложения:</h4>
+                                <div class="attachments__columns">
+                                    <p class="general__text attachments__indent">Файл</p>
+                                    <div class="attachments__columns-inner">
+                                        <p class="general__text attachments__indent attachments__line">Описание</p>
+                                        <p class="general__text attachments__indent">Размер</p>
+                                    </div>
+                                </div>
+                                <div class="attachments__inner">
+                                    <i class="far fa-file-alt attachments__icon"></i>
+                                    <a href="https://btgp.ru/attachments/article/862/%D1%81%D1%82%D1%80%D0%BE%D0%B8%D1%82%D0%B5%D0%BB%D0%B8%202.pdf"
+                                        class="general__text general__link" rel="external">
+                                        08.02.01 Строительство и эксплуатация зданий и сооружений
+                                    </a>
+                                </div>
+                                <div class="attachments__inner">
+                                    <i class="far fa-file-alt attachments__icon"></i>
+                                    <a href="https://btgp.ru/attachments/article/862/%D0%9A%D0%BE%D0%BC%D0%B5%D1%80%D1%86%D0%B8%D1%8F.pdf"
+                                        class="general__text general__link" rel="external">
+                                        38.02.04 Коммерция (по отраслям)
+                                    </a>
+                                </div>
+                            </div>
+
+                            <!-- Attachments -->
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion">
+                <div class="accordion-item">
+                    <div class="accordion-item__triger">
+                        Проведение практик
+                    </div>
+                    <div class="accordion-item__content">
+                        <div class="education__wrapper">
+                            <h2>Годовой план проведения практик:</h2>
+
+                            <!-- Attachments -->
+
+                            <div class="attachments attachments__indent">
+                                <h4>Вложения:</h4>
+                                <div class="attachments__columns">
+                                    <p class="general__text attachments__indent">Файл</p>
+                                    <div class="attachments__columns-inner">
+                                        <p class="general__text attachments__indent attachments__line">Описание</p>
+                                        <p class="general__text attachments__indent">Размер</p>
+                                    </div>
+                                </div>
+                                <div class="attachments__inner">
+                                    <i class="far fa-file-alt attachments__icon"></i>
+                                    <a href="https://btgp.ru/attachments/article/881/%D0%B8%D0%BD%D1%84%D0%BE%D1%80%D0%BC%D0%B0%D1%86%D0%B8%D0%BE%D0%BD%D1%89%D0%B8%D0%BA%D0%B8%20%D0%BF%D1%80%D0%B0%D0%BA%D1%82%D0%B8%D0%BA%D0%B0.pdf"
+                                        class="general__text general__link" rel="external">
+                                        09.02.04 Информационные системы (по отраслям)
+                                    </a>
+                                </div>
+                                <div class="attachments__inner">
+                                    <i class="far fa-file-alt attachments__icon"></i>
+                                    <a href="https://btgp.ru/attachments/article/881/%D0%BA%D0%BE%D0%BC%D0%B5%D1%80%D1%86%D0%B8%D1%8F%20%D0%BF%D1%80%D0%B0%D0%BA%D1%82%D0%B8%D0%BA%D0%B0.pdf"
+                                        class="general__text general__link" rel="external">
+                                        38.02.04 Коммерция (по отраслям)
+                                    </a>
+                                </div>
+                                <div class="attachments__inner">
+                                    <i class="far fa-file-alt attachments__icon"></i>
+                                    <a href="https://btgp.ru/attachments/article/881/%D0%B3%D0%BE%D1%81%D1%82%D0%B8%D0%BD%D0%B8%D1%86%D0%B0%20%D0%BF%D1%80%D0%B0%D0%BA%D1%82%D0%B8%D0%BA%D0%B0.pdf"
+                                        class="general__text general__link" rel="external">
+                                        43.02.11 Гостиничный сервис
+                                    </a>
+                                </div>
+                            </div>
+
+                            <!-- Attachments -->
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion">
+                <div class="accordion-item">
+                    <div class="accordion-item__triger">
+                        Перечень экзаменов
+                    </div>
+                    <div class="accordion-item__content">
+                        <div class="education__wrapper">
+                            <h2>Перечень экзаменов:</h2>
+
+                            <!-- Attachments -->
+
+                            <div class="attachments attachments__indent">
+                                <h4>Вложения:</h4>
+                                <div class="attachments__columns">
+                                    <p class="general__text attachments__indent">Файл</p>
+                                    <div class="attachments__columns-inner">
+                                        <p class="general__text attachments__indent attachments__line">Описание</p>
+                                        <p class="general__text attachments__indent">Размер</p>
+                                    </div>
+                                </div>
+                                <div class="attachments__inner">
+                                    <i class="far fa-file-alt attachments__icon"></i>
+                                    <a href="https://btgp.ru/attachments/article/882/%D0%BF%D0%B5%D1%80%D0%B5%D1%87%D0%B5%D0%BD%D1%8C%20%D1%8D%D0%BA%D0%B7%D0%B0%D0%BC%D0%B5%D0%BD%D0%BE%D0%B2.pdf"
+                                        class="general__text general__link" rel="external">
+                                        Перечень экзаменов
+                                    </a>
+                                </div>
+                            </div>
+
+                            <!-- Attachments -->
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion">
+                <div class="accordion-item">
+                    <div class="accordion-item__triger">
+                        Учебные дисциплины
+                    </div>
+                    <div class="accordion-item__content">
+                        <div class="education__wrapper">
+                            <h2>Программы общеобразовательных учебных дисциплин:</h2>
+
+                            <!-- Attachments -->
+
+                            <div class="attachments attachments__indent">
+                                <h4>Вложения:</h4>
+                                <div class="attachments__columns">
+                                    <p class="general__text attachments__indent">Файл</p>
+                                    <div class="attachments__columns-inner">
+                                        <p class="general__text attachments__indent attachments__line">Описание</p>
+                                        <p class="general__text attachments__indent">Размер</p>
+                                    </div>
+                                </div>
+                                <div class="attachments__inner">
+                                    <i class="far fa-file-alt attachments__icon"></i>
+                                    <a href="https://btgp.ru/attachments/article/571/%D0%9F%D1%80%D0%BE%D0%B3%D1%80%D0%B0%D0%BC%D0%BC%D0%B0%20%D0%90%D0%BD%D0%B3%D0%BB%D0%B8%D0%B9%D1%81%D0%BA%D0%B8%D0%B9%20%D1%8F%D0%B7%D1%8B%D0%BA.pdf"
+                                        class="general__text general__link" rel="external">
+                                        Английский язык
+                                    </a>
+                                </div>
+                                <div class="attachments__inner">
+                                    <i class="far fa-file-alt attachments__icon"></i>
+                                    <a href="https://btgp.ru/attachments/article/571/%D0%9F%D1%80%D0%BE%D0%B3%D1%80%D0%B0%D0%BC%D0%BC%D0%B0%20%D0%91%D0%B8%D0%BE%D0%BB%D0%BE%D0%B3%D0%B8%D1%8F.pdf"
+                                        class="general__text general__link" rel="external">
+                                        Биология
+                                    </a>
+                                </div>
+                                <div class="attachments__inner">
+                                    <i class="far fa-file-alt attachments__icon"></i>
+                                    <a href="https://btgp.ru/attachments/article/571/%D0%9F%D1%80%D0%BE%D0%B3%D1%80%D0%B0%D0%BC%D0%BC%D0%B0%20%D0%93%D0%B5%D0%BE%D0%B3%D1%80%D0%B0%D1%84%D0%B8%D1%8F.pdf"
+                                        class="general__text general__link" rel="external">
+                                        География
+                                    </a>
+                                </div>
+                                <div class="attachments__inner">
+                                    <i class="far fa-file-alt attachments__icon"></i>
+                                    <a href="https://btgp.ru/attachments/article/571/%D0%9F%D1%80%D0%BE%D0%B3%D1%80%D0%B0%D0%BC%D0%BC%D0%B0%20%D0%95%D1%81%D1%82%D0%B5%D1%81%D1%82%D0%B2%D0%BE%D0%B7%D0%BD%D0%B0%D0%BD%D0%B8%D0%B5.pdf"
+                                        class="general__text general__link" rel="external">
+                                        Естествознание
+                                    </a>
+                                </div>
+                                <div class="attachments__inner">
+                                    <i class="far fa-file-alt attachments__icon"></i>
+                                    <a href="https://btgp.ru/attachments/article/571/%D0%9F%D1%80%D0%BE%D0%B3%D1%80%D0%B0%D0%BC%D0%BC%D0%B0%20%D0%98%D0%BD%D1%84%D0%BE%D1%80%D0%BC%D0%B0%D1%82%D0%B8%D0%BA%D0%B0.pdf"
+                                        class="general__text general__link" rel="external">
+                                        Информатика
+                                    </a>
+                                </div>
+                                <div class="attachments__inner">
+                                    <i class="far fa-file-alt attachments__icon"></i>
+                                    <a href="https://btgp.ru/attachments/article/571/%D0%9F%D1%80%D0%BE%D0%B3%D1%80%D0%B0%D0%BC%D0%BC%D0%B0%20%D0%98%D1%81%D1%82%D0%BE%D1%80%D0%B8%D1%8F.pdf"
+                                        class="general__text general__link" rel="external">
+                                        История
+                                    </a>
+                                </div>
+                                <div class="attachments__inner">
+                                    <i class="far fa-file-alt attachments__icon"></i>
+                                    <a href="https://btgp.ru/attachments/article/882/%D0%BF%D0%B5%D1%80%D0%B5%D1%87%D0%B5%D0%BD%D1%8C%20%D1%8D%D0%BA%D0%B7%D0%B0%D0%BC%D0%B5%D0%BD%D0%BE%D0%B2.pdf"
+                                        class="general__text general__link" rel="external">
+                                        Математика: алгебра и начала математического анализа; геометрия
+                                    </a>
+                                </div>
+                                <div class="attachments__inner">
+                                    <i class="far fa-file-alt attachments__icon"></i>
+                                    <a href="https://btgp.ru/attachments/article/571/%D0%9F%D1%80%D0%BE%D0%B3%D1%80%D0%B0%D0%BC%D0%BC%D0%B0%20%D0%9E%D0%B1%D1%89%D0%B5%D1%81%D1%82%D0%B2%D0%BE%D0%B7%D0%BD%D0%B0%D0%BD%D0%B8%D0%B5.pdf"
+                                        class="general__text general__link" rel="external">
+                                        Обществозание
+                                    </a>
+                                </div>
+                                <div class="attachments__inner">
+                                    <i class="far fa-file-alt attachments__icon"></i>
+                                    <a href="https://btgp.ru/attachments/article/571/%D0%9F%D1%80%D0%BE%D0%B3%D1%80%D0%B0%D0%BC%D0%BC%D0%B0%20%D0%9E%D0%91%D0%96.pdf"
+                                        class="general__text general__link" rel="external">
+                                        Основы безопасности жизнедеятальности
+                                    </a>
+                                </div>
+                                <div class="attachments__inner">
+                                    <i class="far fa-file-alt attachments__icon"></i>
+                                    <a href="https://btgp.ru/attachments/article/571/%D0%9F%D1%80%D0%BE%D0%B3%D1%80%D0%B0%D0%BC%D0%BC%D0%B0%20%D0%9F%D1%80%D0%B0%D0%B2%D0%BE.pdf"
+                                        class="general__text general__link" rel="external">
+                                        Право
+                                    </a>
+                                </div>
+                                <div class="attachments__inner">
+                                    <i class="far fa-file-alt attachments__icon"></i>
+                                    <a href="https://btgp.ru/attachments/article/571/%D0%9F%D1%80%D0%BE%D0%B3%D1%80%D0%B0%D0%BC%D0%BC%D0%B0%20%D0%A0%D1%83%D1%81%D1%81%D0%BA%D0%B8%D0%B9%20%D1%8F%D0%B7..pdf"
+                                        class="general__text general__link" rel="external">
+                                        Русский язык и Литература
+                                    </a>
+                                </div>
+                                <div class="attachments__inner">
+                                    <i class="far fa-file-alt attachments__icon"></i>
+                                    <a href="https://btgp.ru/attachments/article/571/%D0%9F%D1%80%D0%BE%D0%B3%D1%80%D0%B0%D0%BC%D0%BC%D0%B0%20%D0%9B%D0%B8%D1%82%D0%B5%D1%80%D0%B0%D1%82%D1%83%D1%80%D0%B0.pdf"
+                                        class="general__text general__link" rel="external">
+                                        Русский язык и Литература. Литература
+                                    </a>
+                                </div>
+                                <div class="attachments__inner">
+                                    <i class="far fa-file-alt attachments__icon"></i>
+                                    <a href="https://btgp.ru/attachments/article/571/%D0%9F%D1%80%D0%BE%D0%B3%D1%80%D0%B0%D0%BC%D0%BC%D0%B0%20%D0%A4%D0%B8%D0%B7%D0%B8%D0%BA%D0%B0.pdf"
+                                        class="general__text general__link" rel="external">
+                                        Физика
+                                    </a>
+                                </div>
+                                <div class="attachments__inner">
+                                    <i class="far fa-file-alt attachments__icon"></i>
+                                    <a href="https://btgp.ru/attachments/article/571/%D0%9F%D1%80%D0%BE%D0%B3%D1%80%D0%B0%D0%BC%D0%BC%D0%B0%20%D0%A4%D0%B8%D0%B7%D0%BA%D1%83%D0%BB%D1%8C%D1%82%D1%83%D1%80%D0%B0.pdf"
+                                        class="general__text general__link" rel="external">
+                                        Физическая культура
+                                    </a>
+                                </div>
+                                <div class="attachments__inner">
+                                    <i class="far fa-file-alt attachments__icon"></i>
+                                    <a href="https://btgp.ru/attachments/article/571/%D0%9F%D1%80%D0%BE%D0%B3%D1%80%D0%B0%D0%BC%D0%BC%D0%B0%20%D0%A5%D0%B8%D0%BC%D0%B8%D1%8F.pdf"
+                                        class="general__text general__link" rel="external">
+                                        Химия
+                                    </a>
+                                </div>
+                                <div class="attachments__inner">
+                                    <i class="far fa-file-alt attachments__icon"></i>
+                                    <a href="https://btgp.ru/attachments/article/571/%D0%9F%D1%80%D0%BE%D0%B3%D1%80%D0%B0%D0%BC%D0%BC%D0%B0%20%D0%AD%D0%BA%D0%BE%D0%BB%D0%BE%D0%B3%D0%B8%D1%8F.pdf"
+                                        class="general__text general__link" rel="external">
+                                        Экология
+                                    </a>
+                                </div>
+                                <div class="attachments__inner">
+                                    <i class="far fa-file-alt attachments__icon"></i>
+                                    <a href="https://btgp.ru/attachments/article/571/%D0%9F%D1%80%D0%BE%D0%B3%D1%80%D0%B0%D0%BC%D0%BC%D0%B0%20%D0%AD%D0%BA%D0%BE%D0%BD%D0%BE%D0%BC%D0%B8%D0%BA%D0%B0.pdf"
+                                        class="general__text general__link" rel="external">
+                                        Экономика
+                                    </a>
+                                </div>
+                            </div>
+
+                            <!-- Attachments -->
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Attachments -->
+
+            <div class="attachments attachments__indent">
+                <h2>Аннотации к рабочим программам</h2>
+                <h4>Вложения:</h4>
+                <div class="attachments__columns">
+                    <p class="general__text attachments__indent">Файл</p>
+                    <div class="attachments__columns-inner">
+                        <p class="general__text attachments__indent attachments__line">Описание</p>
+                        <p class="general__text attachments__indent">Размер</p>
+                    </div>
+                </div>
+                <div class="attachments__inner">
+                    <i class="far fa-file-alt attachments__icon"></i>
+                    <a href="https://btgp.ru/attachments/article/882/%D0%BF%D0%B5%D1%80%D0%B5%D1%87%D0%B5%D0%BD%D1%8C%20%D1%8D%D0%BA%D0%B7%D0%B0%D0%BC%D0%B5%D0%BD%D0%BE%D0%B2.pdf"
+                        class="general__text general__link" rel="external">
+                        Математический и общий естественнонаучный цикл
+                    </a>
+                </div>
+                <div class="attachments__inner">
+                    <i class="far fa-file-alt attachments__icon"></i>
+                    <a href="https://btgp.ru/attachments/article/882/%D0%BF%D0%B5%D1%80%D0%B5%D1%87%D0%B5%D0%BD%D1%8C%20%D1%8D%D0%BA%D0%B7%D0%B0%D0%BC%D0%B5%D0%BD%D0%BE%D0%B2.pdf"
+                        class="general__text general__link" rel="external">
+                        Общеобразовательный цикл
+                    </a>
+                </div>
+                <div class="attachments__inner">
+                    <i class="far fa-file-alt attachments__icon"></i>
+                    <a href="https://btgp.ru/attachments/article/882/%D0%BF%D0%B5%D1%80%D0%B5%D1%87%D0%B5%D0%BD%D1%8C%20%D1%8D%D0%BA%D0%B7%D0%B0%D0%BC%D0%B5%D0%BD%D0%BE%D0%B2.pdf"
+                        class="general__text general__link" rel="external">
+                        Общепрофессиональные дисциплины
+                    </a>
+                </div>
+                <div class="attachments__inner">
+                    <i class="far fa-file-alt attachments__icon"></i>
+                    <a href="https://btgp.ru/attachments/article/882/%D0%BF%D0%B5%D1%80%D0%B5%D1%87%D0%B5%D0%BD%D1%8C%20%D1%8D%D0%BA%D0%B7%D0%B0%D0%BC%D0%B5%D0%BD%D0%BE%D0%B2.pdf"
+                        class="general__text general__link" rel="external">
+                        Общий гуманитарный и социально-экономический цикл
+                    </a>
+                </div>
+                <div class="attachments__inner">
+                    <i class="far fa-file-alt attachments__icon"></i>
+                    <a href="https://btgp.ru/attachments/article/882/%D0%BF%D0%B5%D1%80%D0%B5%D1%87%D0%B5%D0%BD%D1%8C%20%D1%8D%D0%BA%D0%B7%D0%B0%D0%BC%D0%B5%D0%BD%D0%BE%D0%B2.pdf"
+                        class="general__text general__link" rel="external">
+                        Профессиональные модули
+                    </a>
+                </div>
+            </div>
+
+            <div class="attachments attachments__indent">
+                <h2>Календарный учебный график</h2>
+                <h4>Вложения:</h4>
+                <div class="attachments__columns">
+                    <p class="general__text attachments__indent">Файл</p>
+                    <div class="attachments__columns-inner">
+                        <p class="general__text attachments__indent attachments__line">Описание</p>
+                        <p class="general__text attachments__indent">Размер</p>
+                    </div>
+                </div>
+                <div class="attachments__inner">
+                    <i class="far fa-file-alt attachments__icon"></i>
+                    <a href="https://btgp.ru/attachments/article/855/%D0%B3%D1%80%D0%B0%D1%84%D0%B8%D0%BA.pdf"
+                        class="general__text general__link" rel="external">
+                        Календарный учебный график
+                    </a>
+                </div>
+            </div>
+
+
+            <div class="attachments attachments__indent">
+                <h2>Учебный план</h2>
+                <h4>Вложения:</h4>
+                <div class="attachments__columns">
+                    <p class="general__text attachments__indent">Файл</p>
+                    <div class="attachments__columns-inner">
+                        <p class="general__text attachments__indent attachments__line">Описание</p>
+                        <p class="general__text attachments__indent">Размер</p>
+                    </div>
+                </div>
+                <div class="attachments__inner">
+                    <i class="far fa-file-alt attachments__icon"></i>
+                    <a href="https://btgp.ru/attachments/article/854/%D0%A3%D1%87%D0%B5%D0%B1%D0%BD%D1%8B%D0%B9%20%D0%BF%D0%BB%D0%B0%D0%BD%20%D0%BD%D0%B0%20%D1%81%D0%B0%D0%B9%D1%82.pdf"
+                        class="general__text general__link" rel="external">
+                        Учебный план
+                    </a>
+                </div>
+            </div>
+
+
+            <div class="attachments">
+                <h2>Описание образовательный программы</h2>
+                <h4>Вложения:</h4>
+                <div class="attachments__columns">
+                    <p class="general__text attachments__indent">Файл</p>
+                    <div class="attachments__columns-inner">
+                        <p class="general__text attachments__indent attachments__line">Описание</p>
+                        <p class="general__text attachments__indent">Размер</p>
+                    </div>
+                </div>
+                <div class="attachments__inner">
+                    <i class="far fa-file-alt attachments__icon"></i>
+                    <a href="https://btgp.ru/attachments/article/853/%D0%9E%D0%BF%D0%B8%D1%81%D0%B0%D0%BD%D0%B8%D0%B5.pdf"
+                        class="general__text general__link" rel="external">
+                        Описание
+                    </a>
+                </div>
+            </div>
+
+            <!-- Attachments -->
+
+        </div>
+    </section>
+
+    <!-- Education -->
+
+    <!-- Modal Log in -->
+
+    <section id="myModal" class="modal">
+        <div class="modal__wrapper">
+
+            <!-- Authorization -->
+
+            <form class="modal__registration-block" method="POST" action="">
+                <span class="modal__close" onclick="closeModal()">&times;</span>
+                <input type="text" required name="login" placeholder="Введите логин">
+                <input type="password" required name="password" placeholder="Введите пароль">
+                <button type="submit" class="registration__btn" name="button">Войти</button>
+            </form>
+
+            <!-- Authorization -->
+
+        </div>
+    </section>
+
+    <!-- Modal Log in -->
+
+    <!-- Footer -->
+
+    <footer class="footer center">
+        <div class="footer__wrapper container__general">
+            <div class="footer__block">
+                <h2 class="footer__title">Навигация</h2>
+                <a href="#" class="footer__link">SiteMap</a>
+                <a href="#" class="footer__link">Главная</a>
+                <a href="#" class="footer__link">Центр развития карьеры</a>
+                <a href="#" class="footer__link">Профессиональные пробы</a>
+                <a href="#" class="footer__link">Форма "коррупции - нет"</a>
+                <a href="#" class="footer__link">Обращения граждан</a>
+            </div>
+            <div class="footer__block">
+                <h2 class="footer__title">О нас</h2>
+                <a href="#" class="footer__link">СМИ о нас</a>
+                <a href="#" class="footer__link">Опросы и анкеты</a>
+                <a href="#" class="footer__link">Задать вопрос</a>
+                <a href="#" class="footer__link">Оставить отзыв о работе</a>
+                <a href="#" class="footer__link">Демонстрационный экзамен</a>
+                <a href="#" class="footer__link">Образование (старое)</a>
+            </div>
+            <div class="footer__block">
+                <h2 class="footer__title">Соцсети</h2>
+                <a href="#" class="footer__link">Мы в Twitter</a>
+                <a href="#" class="footer__link">Мы в Facebook</a>
+                <a href="#" class="footer__link">Мы в Google+</a>
+                <a href="#" class="footer__link">Группа Автошколы в ВК</a>
+                <a href="#" class="footer__link">Независимая система оценки качества</a>
+                <a href="#" class="footer__link">Электронная библиотека ЮРАЙТ</a>
+                <a href="#" class="footer__link">Регистрации в электронной библиотеке </a>
+            </div>
+            <div class="footer__block">
+                <button class="footer__modal-btn" data-hover="Нажми на меня!" onclick="footerModal()">
+                    <div>Задать вопрос</div>
+                </button>
+                <div class="footer__social">
+                    <a href="#" class="footer__social-icon">
+                        <i class="fab fa-vk footer__social-additionally"></i>
+                    </a>
+                    <a href="#" class="footer__social-icon">
+                        <i class="fab fa-odnoklassniki-square footer__social-additionally"></i>
+                    </a>
+                    <a href="#" class="footer__social-icon">
+                        <i class="fab fa-youtube footer__social-additionally"></i>
+                    </a>
+                </div>
+
+                <!-- Modal Questions -->
+
+                <div id="myModalFooter" class="modal">
+                    <div class="modal__wrapper">
+
+                        <!-- Form Footer -->
+
+                        <form class="modal__registration-block" method="POST" action="">
+                            <span class="modal__close" onclick="closeModalFooter()">&times;</span>
+                            <input type="text" required name="login" placeholder="Ваше имя">
+                            <input type="email" required name="password" placeholder="Ваш e-mail">
+                            <input type="number" required name="password" placeholder="Номер телефона">
+                            <textarea type="text" class="news__registration-text" required name="text"
+                                placeholder="Введите текст"></textarea>
+                            <div class="news__file">
+                                <input type="file" class="registration__file" name="file" multiple />
+                                <button type="button" class="registration__btn registration__remove">Удалить
+                                    файлы</button>
+                            </div>
+                            <button type="submit" class="registration__btn" name="button">Отправить</button>
+                        </form>
+
+                        <!-- Form Footer -->
+
+                    </div>
+                </div>
+
+                <!-- Modal Questions -->
+
+            </div>
+        </div>
+    </footer>
+
+    <!-- Footer -->
+
+    <script src="swiper/js/swiper.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
