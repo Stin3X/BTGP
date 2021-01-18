@@ -42,6 +42,16 @@ textarea {
     outline: none;
 }
 
+blockquote {
+    border-left: 5px solid $wtDark;
+
+    margin-bottom: 30px;
+}
+
+.quote__text {
+    text-align: right;
+}
+
 h1 {
     font-family: 'Roboto', sans-serif;
     color: $blue;
@@ -76,7 +86,7 @@ button {
 }
 
 .reset__ident {
-    margin-bottom: 0;
+    margin-bottom: 0 !important;
 }
 
 .general__text {
@@ -94,6 +104,10 @@ button {
 
 .general__indent {
     margin-top: 10px;
+}
+
+.quote__indent {
+    margin-left: 30px;
 }
 
 .general__weight {

@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>BTGP</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://kit.fontawesome.com/c8a8e1c510.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="swiper/css/swiper.css" />
+</head>
+
+<body>
+
+    <!-- Header -->
+
+    <header class="header center">
+        <div class="header__wrapper container__general">
+            <div class="header__general">
+                <div class="header__logo"></div>
+            </div>
+            <nav class="header__nav">
+                <a id="linkOne" href="/index.html" class="nav__link" onclick="linkTransitionOne()">Новости</a>
+                <a id="linkTwo" href="#" class="nav__link nav__link-bg" onclick="linkTransitionTwo()">Сведения об
+                    образовательной
+                    организации</a>
+                <a id="linkThree" href="#" class="nav__link" onclick="linkTransitionThree()">Абитуриенту</a>
+                <a id="linkFour" href="#" class="nav__link" onclick="linkTransitionFour()">Дистанционное обучение</a>
+                <a id="linkFive" href="#" class="nav__link" onclick="linkTransitionFive()">Расписание</a>
+                <a id="linkSix" href="#" class="nav__link" onclick="linkTransitionSix()">Автошкола</a>
+                <a id="linkSeven" href="/contact.html" class="nav__link" onclick="linkTransitionSeven()">Контакты</a>
+                <a id="linkEight" href="#" class="nav__link" onclick="linkTransitionEight()">Войти</a>
+            </nav>
+            <div id="dropdownOne" class="header__dropdown header__dropdown-one">
+                <a href="/BasicInformation.html" class="header__dropdown-link">Основные сведения</a>
+                <a href="/structure.html" class="header__dropdown-link">Структура и органы управления образовательной
+                    организацией</a>
+                <a href="/organizationDocuments.html" class="header__dropdown-link">Документы</a>
+                <a href="/education.html" class="header__dropdown-link">Образование</a>
+                <a href="/educationalStandards.html" class="header__dropdown-link">Образовательные стандарты</a>
+                <a href="#" class="header__dropdown-link">Руководство. Педагогический состав</a>
+                <a href="/logisticalSupport.html" class="header__dropdown-link">Материально-техническое обеспечение и
+                    оснащённость
+                    образовательного процесса</a>
+                <a href="/scholarship.html" class="header__dropdown-link">Стипендии и иные виды материальной
+                    поддержки</a>
+                <a href="#" class="header__dropdown-link">Платные образовательные услуги</a>
+                <a href="#" class="header__dropdown-link">Вакантные места для приёма (перевода)</a>
+                <a href="#" class="header__dropdown-link">Рабочие программы</a>
+                <a href="#" class="header__dropdown-link">Коррупции - нет</a>
+                <a href="#" class="header__dropdown-link">Закупки</a>
+            </div>
+            <div id="dropdownTwo" class="header__dropdown header__dropdown-two">
+                <a href="#" class="header__dropdown-link">Приемная комиссия</a>
+                <a href="#" class="header__dropdown-link">Документы для поступления</a>
+                <a href="#" class="header__dropdown-link">День открытых дверей</a>
+                <a href="#" class="header__dropdown-link">Общежитие</a>
+                <a href="#" class="header__dropdown-link">Стипендия</a>
+                <a href="#" class="header__dropdown-link">Контрольные цифры приема 2020-2021</a>
+                <a href="#" class="header__dropdown-link">Профессиональные пробы</a>
+                <a href="#" class="header__dropdown-link">Условия обучения лиц с ОВЗ и инвалидностью</a>
+                <a href="#" class="header__dropdown-link">Порядок приема лиц с ОВЗ и инвалидностью</a>
+                <a href="#" class="header__dropdown-link">Сведения о поданных заявлениях и зачисленных абитуриентах </a>
+                <a href="#" class="header__dropdown-link">Правила приема</a>
+                <a href="#" class="header__dropdown-link">Библиотека</a>
+                <a href="#" class="header__dropdown-link">Перечень специальностей, требования к уровню образования</a>
+                <a href="#" class="header__dropdown-link">Условия приема на обучение по договорам об оказании платных
+                    услуг</a>
+                <a href="#" class="header__dropdown-link">Количество мест по договорам об оказании платных
+                    образовательных услуг</a>
+                <a href="#" class="header__dropdown-link">Договор об оказании платных услуг по программам СПО</a>
+            </div>
+            <div id="dropdownThree" class="header__dropdown header__dropdown-three">
+                <a href="#" class="header__dropdown-link">Перейти на сайт moodle.btgp.ru</a>
+            </div>
+            <div id="dropdownFour" class="header__dropdown header__dropdown-four">
+                <a href="#" class="header__dropdown-link">Замены в расписании (дневное отделение)</a>
+            </div>
+            <div id="dropdownFive" class="header__dropdown header__dropdown-five">
+                <a href="/carpark.html" class="header__dropdown-link">Автопарк</a>
+                <a href="/documents.html" class="header__dropdown-link">Документы</a>
+                <a href="/masters.html" class="header__dropdown-link">Мастера производственного обучения</a>
+                <a href="/closedArea.html" class="header__dropdown-link">Закрытая площадка</a>
+                <a href="/payment.html" class="header__dropdown-link">Оплата</a>
+                <a href="/usefulLinks.html" class="header__dropdown-link">Полезные ссылки</a>
+                <a href="/contactsDriving.html" class="header__dropdown-link">Контакты</a>
+                <a href="https://docs.google.com/forms/d/e/1FAIpQLSeCgdvO_PecQL3J3yieer_DCHZ9UsG6QxflBaeigciAwMsqfg/viewform"
+                    class="header__dropdown-link" rel="external">Опрос по качеству</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Header -->
+
+    <!-- Intro -->
+
+    <section class="intro">
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="intro__inner">
+                        <div class="intro__block">
+                            <h1 class="intro__title">Приглашаем на обучение</h1>
+                            <p class="intro__date">2 года 10 месяцев</p>
+                            <p class="intro__text">Гостиничный сервис</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="intro__inner">
+                        <div class="intro__block">
+                            <h1 class="intro__title">Приглашаем на обучение</h1>
+                            <p class="intro__date">2 года 10 месяцев</p>
+                            <p class="intro__text">Коммерция (по отраслям)</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="intro__inner">
+                        <div class="intro__block">
+                            <h1 class="intro__title">Приглашаем на обучение</h1>
+                            <p class="intro__date">3 года 10 месяцев</p>
+                            <p class="intro__text intro__width-one">Строительство и эксплуатация зданий и сооружений</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="intro__inner">
+                        <div class="intro__block">
+                            <h1 class="intro__title">Приглашаем на обучение</h1>
+                            <p class="intro__date">2 года 10 месяцев</p>
+                            <p class="intro__text intro__width-two">Земельно-имущественные отношения</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="intro__inner">
+                        <div class="intro__block">
+                            <h1 class="intro__title">Приглашаем на обучение</h1>
+                            <p class="intro__date">3 года 10 месяцев</p>
+                            <p class="intro__text intro__width-three">Информационные системы и программирование</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="intro__inner">
+                        <div class="intro__block">
+                            <h1 class="intro__title">Приглашаем на обучение</h1>
+                            <p class="intro__date">3 года 10 месяцев</p>
+                            <p class="intro__text intro__width-four">Управление, эксплуатация и обслуживание
+                                многоквартирного дома</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div>
+        </div>
+    </section>
+
+    <!-- Intro -->
+
+    <!-- Sholarship -->
+
+    <section class="scholarship center">
+        <div class="scholarship__general container__general">
+            <div class="scholarship__inner">
+                <h1>Информация о трудоустройстве выпускников</h1>
+                <p class="general__text attachments__indent">
+                    Возможные места трудоустройства для выпускников ОГБПОУ «Буйский техникум
+                    градостроительства и предпринимательства Костромской области» в г. Буй и Буйском районе:
+                </p>
+                <h4 class="attachments__indent">
+                    Для специальности «Строительство и эксплуатация зданий и сооружений»
+                </h4>
+                <div class="sholarship__description">
+                    <p class="general__text general__weight">ЗАО Птицефабрика:</p>
+                    <p class="general__text">д. Угольское, м. Куликово</p>
+                    <p class="general__text">+7(49435)4-29-25</p>
+                </div>
+                <div class="sholarship__description">
+                    <p class="general__text general__weight">ООО «Буйская транспортно-экспедиционная компания»:</p>
+                    <p class="general__text">г. Буй, ул. Октябрьской революции, д 90/2</p>
+                    <p class="general__text">8-920-640-25-15</p>
+                </div>
+                <div class="sholarship__description">
+                    <p class="general__text general__weight">ГПКО Буйское дорожно-эксплуатационное предприятие 35:</p>
+                    <p class="general__text">д. Угольское, м Куликово</p>
+                    <p class="general__text">+7(49435)4-39-61</p>
+                </div>
+                <div class="sholarship__description">
+                    <p class="general__text general__weight">ООО Буйская Сельхозтехника:</p>
+                    <p class="general__text">г. Буй, м. Лаврово</p>
+                    <p class="general__text">+7(49435)4-40-35</p>
+                </div>
+                <div class="sholarship__description">
+                    <p class="general__text general__weight">МУП ЖКХ БУЙСКОГО РАЙОНА:</p>
+                    <p class="general__text">г. Буй, м Булгарим, д 1</p>
+                    <p class="general__text">+7(49435)4-40-85</p>
+                </div>
+                <div class="sholarship__description">
+                    <p class="general__text general__weight">ООО БУЙСКАЯ МТС:</p>
+                    <p class="general__text">г. Буй, п. Пионерный, д 15</p>
+                    <p class="general__text">+7(49435)4-80-09</p>
+                </div>
+                <h4 class="attachments__indent">
+                    Для специальностей: «Экономика и бухгалтерский учет (по отраслям) «Земельно-имущественные
+                    отношения»
+                </h4>
+                <div class="sholarship__description">
+                    <p class="general__text general__weight">Филиал ООО «РОСГОССТРАХ» в Костромской области:</p>
+                    <p class="general__text">г. Буй, ул. Максима Горького</p>
+                    <p class="general__text">+7(49435)4-21-33</p>
+                </div>
+                <div class="sholarship__description">
+                    <p class="general__text general__weight">Страховой отдел город Буй:</p>
+                    <p class="general__text">д. 25</p>
+                    <p class="general__text">+7(49435)4-21-33</p>
+                </div>
+                <div class="sholarship__description">
+                    <p class="general__text general__weight">ООО ВОСКРЕСЕНЬЕ АГРО:</p>
+                    <p class="general__text">г. Буй, ул. Островского , д 3</p>
+                    <p class="general__text">+7(49435)4-21-50</p>
+                </div>
+                <div class="sholarship__description">
+                    <p class="general__text general__weight">ОАО "БУЙТОРГ":</p>
+                    <p class="general__text">г. Буй, ул. Карла Маркса, д 26</p>
+                    <p class="general__text">+7(49435)4-60-18</p>
+                </div>
+                <div class="sholarship__description">
+                    <p class="general__text general__weight">ФИЛИАЛ ООО "АЛЬЯНС" "Народный Дом":</p>
+                    <p class="general__text">г. Буй, ул. Коммунистов, д 25</p>
+                    <p class="general__text">+7-920-647-80-03</p>
+                </div>
+                <div class="sholarship__description">
+                    <p class="general__text general__weight">
+                        ГКУ «Областной реабилитационный центр для детей и подростков с ограниченными возможностями
+                        «Лесная сказка»:
+                    </p>
+                    <p class="general__text">Буйский р-н, ПГТ Чистые боры, мкр. Лесной, д. 2</p>
+                    <p class="general__text">+7(49435)3-54-90</p>
+                </div>
+                <div class="sholarship__description">
+                    <p class="general__text general__weight">
+                        Межмуниципальный отдел министерства внутренних дел РФ «Буйский»:
+                    </p>
+                    <p class="general__text">г. БУЙ, ул. 10 Годовщины октября, д 17</p>
+                    <p class="general__text">+7(49435)4-28-76</p>
+                </div>
+            </div>
+            <div class="scholarship__inner">
+                <h1>Общежитие</h1>
+                <div class="sholarship__description">
+                    <h4>
+                        Контакты:
+                    </h4>
+                    <p class="general__text general__weight">Адрес:</p>
+                    <p class="general__text">157000, Костромская область, город Буй, улица Карла Маркса, дом 41.</p>
+                    <p class="general__text general__weight">Телефон:</p>
+                    <p class="general__text">+8(49435)4-40-29</p>
+                    <p class="general__text general__weight">Комендант общежития:</p>
+                    <p class="general__text attachments__indent">Малкова Виталия Юрьевна</p>
+                    <p class="general__text">
+                        Для проживания в общежитии имеется 87 комнат для проживания 2 или 3 человек,
+                        максимальная вместимость 190 человек.
+                    </p>
+                    <p class="general__text">
+                        <span class="general__weight">Общежитие находится в 5 минутах от техникума,</span> 5 этажное
+                        кирпичное благоустроенное здание коридорного
+                        типа. Комнаты предназначены <span class="general__weight">для проживания 2 или 3 человек.</span>
+                        Плата за общежитие устанавливается в
+                        соответствии с расчетом-обоснованием. Установленная плата вносится ежемесячно в кассу техникума.
+                        Кроме жилых комнат имеется <span class="general__weight">на этаже 2 кухни, оснащенные газовыми
+                            плитами</span>. Студенты очного отделения
+                        проживают на 5 этаже, здесь же имеется <span class="general__weight">душевая комната, комнаты
+                            для умывания, туалеты, помещения для
+                            сушки белья, комната для отдыха с телевизором. Имеется возможность подключения к сети
+                            Интернет.</span>
+                    </p>
+                    <p class="general__text general__weight">В общежитии также имеется помещения общего пользования:</p>
+                    <p class="general__text"> — Для занятия спортом и игр</p>
+                    <p class="general__text"> — Актовый зал</p>
+                    <p class="general__text"> — Помещение для стирки личных вещей, оснащенное стиральной машиной</p>
+                    <p class="general__text"> — Душевые.</p>
+                    <p class="general__text">
+                        Общежитие оборудовано охранной и пожарной сигнализацией, системой
+                        видеонаблюдения, установлены камеры видеонаблюдения. В общежитии установлен пропускной режим.
+                    </p>
+                </div>
+                <div class="sholarship__description">
+                    <h4>Стоимость проживания:</h4>
+                    <p class="general__text">Студенты дневного отделения — <span class="general__weight">250,00</span>
+                        руб;</p>
+                    <p class="general__text">Посуточное проживание — <span class="general__weight">300,00 руб.;</span>
+                    </p>
+                    <p class="general__text">Дети-сироты и дети, оставшимися без попечения родителей — <span
+                            class="general__weight">бесплатно.</span></p>
+                </div>
+                <div class="sholarship__description">
+                    <h4>Документы:</h4>
+                    <p class="general__text">Положение об общежитии;</p>
+                    <p class="general__text">Договор найма жилого помещения в студенческом общежитии;</p>
+                    <p class="general__text">Порядок оплаты за проживание;</p>
+                    <p class="general__text">Правила внутреннего распорядка студенческого общежития.</p>
+                </div>
+                <div class="sholarship__images-block">
+                    <img class="sholarship__images" src="images/DormOne.jpg">
+                    <img class="sholarship__images" src="images/DormTwo.jpg">
+                    <img class="sholarship__images" src="images/DormThree.jpg">
+                    <img class="sholarship__images" src="images/DormFour.jpg">
+                    <img class="sholarship__images" src="images/DormFive.jpg">
+                </div>
+            </div>
+            <div class="scholarship__inner">
+                <h1>Стипендии и иные виды материальной поддержки</h1>
+                <div class="sholarship__description">
+                    <p class="general__text">
+                        Стипендия, является денежной выплатой, назначаемой студентам техникума, обучающимся по очной
+                        форме обучения, подразделяются на:
+                    </p>
+                    <p class="general__text"> — Государственные академические стипендии;</p>
+                    <p class="general__text"> — Государственные социальные стипендии;</p>
+                    <p class="general__text"> — Именные стипендии.</p>
+                </div>
+                <div class="sholarship__description">
+                    <p class="general__text">
+                        Студентам начисляется государственная академическая стипендия и (или) государственная социальная
+                        стипендия в порядке, установленном Законом Костромской области от 26.10.2016 № 161-6-ЗКО «О
+                        внесении изменений в Закон Костромской области «О мерах социальной поддержки и стимулирования
+                        обучающихся государственных профессиональных образовательных организаций, находящихся в ведении
+                        Костромской области». Государственные академические стипендии и социальные стипендии назначаются
+                        студентам, обучающимся в техникуме за счет средств областного бюджета.
+                    </p>
+                </div>
+                <div class="sholarship__description">
+                    <p class="general__text">
+                        <span class="general__weight">Государственная академическая стипендия в размере 487,00 руб. в
+                            месяц</span> назначается студентам, не
+                        имеющим по результатам промежуточной аттестации оценок "удовлетворительно" и не имеющим
+                        академической задолженности. В период с начала учебного года до прохождения первой промежуточной
+                        аттестации государственная академическая стипендия выплачивается всем студентам первого курса.
+                        Государственные академические стипендии назначаются студентам, обучающимся по очной форме
+                        обучения.
+                    </p>
+                </div>
+                <div class="sholarship__description">
+                    <p class="general__text">
+                        <span class="general__weight">Государственная социальная стипендия в размере 730,00 руб. в
+                            месяц</span> назначается студентам,
+                        нуждающимся в социальной помощи. относящимся к одной из категорий лиц, предусмотренных частью 5
+                        статьи 36 Федерального закона от 29 декабря 2012 года №273-ФЗ "Об образовании в Российской
+                        Федерации":
+                    </p>
+                </div>
+                <div class="sholarship__description">
+                    <blockquote>
+                        <p class="general__text quote__indent">
+                            Государственная социальная стипендия назначается студентам, являющимся детьми-сиротами и
+                            детьми,
+                            оставшимися без попечения родителей, лицами из числа детей-сирот и детей, оставшихся без
+                            попечения родителей, лицами, потерявшими в период обучения обоих родителей или единственного
+                            родителя, детьми-инвалидами, инвалидами I и II групп, инвалидами с детства, студентам,
+                            подвергшимся воздействию радиации вследствие катастрофы на Чернобыльской АЭС и иных
+                            радиационных
+                            катастроф ...
+                        </p>
+                    </blockquote>
+                    <p class="general__text quote__text">
+                        (в ред. Федеральных законов от 04.06.2014 N 145-ФЗ, от 03.07.2016 N 227-ФЗ,
+                        от 03.07.2016 N 312-ФЗ, от 03.07.2016 N 359-ФЗ)
+                    </p>
+                </div>
+                <div class="sholarship__description">
+                    <p class="general__text">
+                        Право на получение государственной социальной стипендии имеет студент техникума, представивший в
+                        стипендиальную комиссию справку, выдаваемую органом социальной защиты населения по месту
+                        жительства, для получения государственной социальной помощи. Справка представляется ежегодно.
+                    </p>
+                </div>
+                <div class="sholarship__description">
+                    <p class="general__text">
+                        Выплата государственной социальной стипендии приостанавливается при наличии задолженности по
+                        результатам экзаменационной сессии (кроме студентов, относящихся к категории детей-сирот и
+                        детей, оставшихся без попечения родителей, детей инвалидов) и возобновляется после ее ликвидации
+                        с момента приостановления выплаты указанной стипендии.
+                    </p>
+                </div>
+                <div class="sholarship__description">
+                    <p class="general__text">
+                        <span class="general__weight">Именные стипендии учреждаются органами государственной
+                            власти,</span> органами местного самоуправления,
+                        юридическими и физическими лицами и назначаются студентам техникума. <span
+                            class="general__weight">За особые успехи в учебной
+                            и научной деятельности, техническом и художественном творчестве
+                            студентам техникума в пределах имеющихся средств могут устанавливаться повышенные
+                            стипендии.</span>
+                    </p>
+                </div>
+                <div class="sholarship__description reset__ident">
+                    <h4>Дополнительная информация:</h4>
+                    <a href="https://btgp.ru/%D1%81%D0%B2%D0%B5%D0%B4%D0%B5%D0%BD%D0%B8%D1%8F-%D0%BE%D0%B1-%D0%BE%D0%B1%D1%80%D0%B0%D0%B7%D0%BE%D0%B2%D0%B0%D1%82%D0%B5%D0%BB%D1%8C%D0%BD%D0%BE%D0%B9-%D0%BE%D1%80%D0%B3%D0%B0%D0%BD%D0%B8%D0%B7%D0%B0%D1%86%D0%B8%D0%B8/%D0%B4%D0%BE%D0%BA%D1%83%D0%BC%D0%B5%D0%BD%D1%82%D1%8B.html"
+                        class="general__text general__link" rel="external">
+                        Положение о стипендиальном обеспечении
+                    </a>
+                    <a href="http://www.consultant.ru/document/cons_doc_LAW_121886/"
+                        class="general__text general__link" rel="external">
+                        Постановление Правительства Российской Федерации от 18.11.2011 № 945
+                    </a>
+                    <a href="http://www.consultant.ru/document/cons_doc_LAW_132123/"
+                        class="general__text general__link" rel="external">
+                        Постановление Правительства Российской Федерации от 02.07.2012 № 679
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sholarship -->
+
+    <!-- Modal Log in -->
+
+    <section id="myModal" class="modal">
+        <div class="modal__wrapper">
+
+            <!-- Authorization -->
+
+            <form class="modal__registration-block" method="POST" action="">
+                <span class="modal__close" onclick="closeModal()">&times;</span>
+                <input type="text" required name="login" placeholder="Введите логин">
+                <input type="password" required name="password" placeholder="Введите пароль">
+                <button type="submit" class="registration__btn" name="button">Войти</button>
+            </form>
+
+            <!-- Authorization -->
+
+        </div>
+    </section>
+
+    <!-- Modal Log in -->
+
+    <!-- Footer -->
+
+    <footer class="footer center">
+        <div class="footer__wrapper container__general">
+            <div class="footer__block">
+                <h2 class="footer__title">Навигация</h2>
+                <a href="#" class="footer__link">SiteMap</a>
+                <a href="#" class="footer__link">Главная</a>
+                <a href="#" class="footer__link">Центр развития карьеры</a>
+                <a href="#" class="footer__link">Профессиональные пробы</a>
+                <a href="#" class="footer__link">Форма "коррупции - нет"</a>
+                <a href="#" class="footer__link">Обращения граждан</a>
+            </div>
+            <div class="footer__block">
+                <h2 class="footer__title">О нас</h2>
+                <a href="#" class="footer__link">СМИ о нас</a>
+                <a href="#" class="footer__link">Опросы и анкеты</a>
+                <a href="#" class="footer__link">Задать вопрос</a>
+                <a href="#" class="footer__link">Оставить отзыв о работе</a>
+                <a href="#" class="footer__link">Демонстрационный экзамен</a>
+                <a href="#" class="footer__link">Образование (старое)</a>
+            </div>
+            <div class="footer__block">
+                <h2 class="footer__title">Соцсети</h2>
+                <a href="#" class="footer__link">Мы в Twitter</a>
+                <a href="#" class="footer__link">Мы в Facebook</a>
+                <a href="#" class="footer__link">Мы в Google+</a>
+                <a href="#" class="footer__link">Группа Автошколы в ВК</a>
+                <a href="#" class="footer__link">Независимая система оценки качества</a>
+                <a href="#" class="footer__link">Электронная библиотека ЮРАЙТ</a>
+                <a href="#" class="footer__link">Регистрации в электронной библиотеке </a>
+            </div>
+            <div class="footer__block">
+                <button class="footer__modal-btn" data-hover="Нажми на меня!" onclick="footerModal()">
+                    <div>Задать вопрос</div>
+                </button>
+                <div class="footer__social">
+                    <a href="#" class="footer__social-icon">
+                        <i class="fab fa-vk footer__social-additionally"></i>
+                    </a>
+                    <a href="#" class="footer__social-icon">
+                        <i class="fab fa-odnoklassniki-square footer__social-additionally"></i>
+                    </a>
+                    <a href="#" class="footer__social-icon">
+                        <i class="fab fa-youtube footer__social-additionally"></i>
+                    </a>
+                </div>
+
+                <!-- Modal Questions -->
+
+                <div id="myModalFooter" class="modal">
+                    <div class="modal__wrapper">
+
+                        <!-- Form Footer -->
+
+                        <form class="modal__registration-block" method="POST" action="">
+                            <span class="modal__close" onclick="closeModalFooter()">&times;</span>
+                            <input type="text" required name="login" placeholder="Ваше имя">
+                            <input type="email" required name="password" placeholder="Ваш e-mail">
+                            <input type="number" required name="password" placeholder="Номер телефона">
+                            <textarea type="text" class="news__registration-text" required name="text"
+                                placeholder="Введите текст"></textarea>
+                            <div class="news__file">
+                                <input type="file" class="registration__file" name="file" multiple />
+                                <button type="button" class="registration__btn registration__remove">Удалить
+                                    файлы</button>
+                            </div>
+                            <button type="submit" class="registration__btn" name="button">Отправить</button>
+                        </form>
+
+                        <!-- Form Footer -->
+
+                    </div>
+                </div>
+
+                <!-- Modal Questions -->
+
+            </div>
+        </div>
+    </footer>
+
+    <!-- Footer -->
+
+    <script src="swiper/js/swiper.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>

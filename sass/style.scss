@@ -656,6 +656,42 @@
     }
 }
 
+// Todo: SCHOLARSHIP
+
+.scholarship {
+    margin-bottom: 30px;
+
+    .scholarship__general {
+        display: flex;
+        flex-direction: column;
+
+        .scholarship__inner {
+            display: flex;
+            flex-direction: column;
+
+            .sholarship__description {
+                display: flex;
+                flex-direction: column;
+
+                margin-bottom: 30px;
+            }
+
+            .sholarship__images-block {
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr;
+                row-gap: 1em;
+
+                margin-bottom: 30px;
+
+                .sholarship__images {
+                    width: 600px;
+                    height: 300px;
+                }
+            }
+        }
+    }
+}
+
 //! FOOTER
 
 .footer {
@@ -764,7 +800,7 @@
                         transition: .2s ease;
 
                         &:hover {
-                            color: $white;                           
+                            color: $white;
                         }
                     }
                 }

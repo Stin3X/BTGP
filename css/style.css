@@ -32,6 +32,13 @@ textarea {
   cursor: pointer;
   outline: none; }
 
+blockquote {
+  border-left: 5px solid #e5e5e5;
+  margin-bottom: 30px; }
+
+.quote__text {
+  text-align: right; }
+
 h1 {
   font-family: 'Roboto', sans-serif;
   color: #1b2b66;
@@ -59,7 +66,7 @@ button {
   cursor: pointer; }
 
 .reset__ident {
-  margin-bottom: 0; }
+  margin-bottom: 0 !important; }
 
 .general__text {
   font-family: 'Roboto', sans-serif;
@@ -72,6 +79,9 @@ button {
 
 .general__indent {
   margin-top: 10px; }
+
+.quote__indent {
+  margin-left: 30px; }
 
 .general__weight {
   font-weight: 500 !important; }
@@ -578,6 +588,27 @@ button {
     .logistical .logistical__general .logistical__inner {
       display: flex;
       flex-direction: column; }
+
+.scholarship {
+  margin-bottom: 30px; }
+  .scholarship .scholarship__general {
+    display: flex;
+    flex-direction: column; }
+    .scholarship .scholarship__general .scholarship__inner {
+      display: flex;
+      flex-direction: column; }
+      .scholarship .scholarship__general .scholarship__inner .sholarship__description {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 30px; }
+      .scholarship .scholarship__general .scholarship__inner .sholarship__images-block {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        row-gap: 1em;
+        margin-bottom: 30px; }
+        .scholarship .scholarship__general .scholarship__inner .sholarship__images-block .sholarship__images {
+          width: 600px;
+          height: 300px; }
 
 .footer {
   background: #1b2b66;
