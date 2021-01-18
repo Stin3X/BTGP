@@ -650,6 +650,8 @@ button {
             font-size: 24px;
             transition: .2s ease; }
             .footer .footer__wrapper .footer__block .footer__social .footer__social-icon .footer__social-additionally:hover {
-              color: #ffffff; }
+              color: #ffffff;
+              background-color: #ffffff;
+              font-size: 30px; }
 
 /*# sourceMappingURL=style.css.map */
