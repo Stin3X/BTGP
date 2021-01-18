@@ -561,6 +561,24 @@ button {
     .education .education__general .accordion-item__active .accordion-item__content {
       display: block; }
 
+.standards {
+  margin-bottom: 30px; }
+  .standards .standards__general {
+    display: flex;
+    flex-direction: column; }
+    .standards .standards__general .standards__inner {
+      display: flex;
+      flex-direction: column; }
+
+.logistical {
+  margin-bottom: 30px; }
+  .logistical .logistical__general {
+    display: flex;
+    flex-direction: column; }
+    .logistical .logistical__general .logistical__inner {
+      display: flex;
+      flex-direction: column; }
+
 .footer {
   background: #1b2b66;
   height: 406px; }

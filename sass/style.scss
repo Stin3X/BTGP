@@ -624,6 +624,38 @@
     }
 }
 
+// Todo: EDUCATIONSTANDARDS
+
+.standards {
+    margin-bottom: 30px;
+
+    .standards__general {
+        display: flex;
+        flex-direction: column;
+
+        .standards__inner {
+            display: flex;
+            flex-direction: column;
+        }
+    }
+}
+
+// Todo: LOGISTICALSUPPORT
+
+.logistical {
+    margin-bottom: 30px;
+
+    .logistical__general {
+        display: flex;
+        flex-direction: column;
+
+        .logistical__inner {
+            display: flex;
+            flex-direction: column;
+        }
+    }
+}
+
 //! FOOTER
 
 .footer {
